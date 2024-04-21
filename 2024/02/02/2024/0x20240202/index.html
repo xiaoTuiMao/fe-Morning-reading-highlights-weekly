@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>前端早读精选 - 第六期 - Hexo</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Hexo"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hexo"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来，来自腾讯的2023前端年度技术盘点与2024技术展望、深度剖析正则原理、新的前端图片格式 -avif、以及css与前端轮训小技巧。工具方面，带来近期霸榜 GitHub Trending 的12306抢票、前端代码查重工具、google 网页索引工具与对shell更友好的bun-shell。话不多说，详细内容请大"><meta property="og:type" content="article"><meta property="og:title" content="前端早读精选 - 第六期"><meta property="og:url" content="http://example.com/2024/02/02/2024/0x20240202/"><meta property="og:site_name" content="Hexo"><meta property="og:description" content="探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来，来自腾讯的2023前端年度技术盘点与2024技术展望、深度剖析正则原理、新的前端图片格式 -avif、以及css与前端轮训小技巧。工具方面，带来近期霸榜 GitHub Trending 的12306抢票、前端代码查重工具、google 网页索引工具与对shell更友好的bun-shell。话不多说，详细内容请大"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/65bd98f6d880498fb41bdf91644633b2~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&amp;h=768&amp;s=1363677&amp;e=png&amp;b=e1b078"><meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bdd7a1ee71864e93b2381ad8cebf56fd~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1353&amp;h=287&amp;s=129384&amp;e=png&amp;b=ece1ce"><meta property="og:image" content="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a362c7d8c0bf439cad5d342a3011c668~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=691&amp;h=483&amp;s=98434&amp;e=png&amp;b=191919"><meta property="article:published_time" content="2024-02-02T00:00:00.000Z"><meta property="article:modified_time" content="2024-04-19T03:49:51.959Z"><meta property="article:author" content="John Doe"><meta property="article:tag" content="技术周刊"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/65bd98f6d880498fb41bdf91644633b2~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&amp;h=768&amp;s=1363677&amp;e=png&amp;b=e1b078"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/02/02/2024/0x20240202/"},"headline":"前端早读精选 - 第六期","image":[],"datePublished":"2024-02-02T00:00:00.000Z","dateModified":"2024-04-19T03:49:51.959Z","author":{"@type":"Person","name":"John Doe"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject"}},"description":"探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来，来自腾讯的2023前端年度技术盘点与2024技术展望、深度剖析正则原理、新的前端图片格式 -avif、以及css与前端轮训小技巧。工具方面，带来近期霸榜 GitHub Trending 的12306抢票、前端代码查重工具、google 网页索引工具与对shell更友好的bun-shell。话不多说，详细内容请大"}</script><link rel="canonical" href="http://example.com/2024/02/02/2024/0x20240202/"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.2.0"></head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">Hexo</a></div><div class="navbar-menu"><div class="navbar-end"></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-02-02T00:00:00.000Z" title="2024/2/2 08:00:00">2024-02-02</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-04-19T03:49:51.959Z" title="2024/4/19 11:49:51">2024-04-19</time></span></div></div><h1 class="title is-3 is-size-4-mobile">前端早读精选 - 第六期</h1><div class="content"><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/65bd98f6d880498fb41bdf91644633b2~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&h=768&s=1363677&e=png&b=e1b078" alt="file"><br>探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来，来自腾讯的2023前端年度技术盘点与2024技术展望、深度剖析正则原理、新的前端图片格式 -avif、以及css与前端轮训小技巧。工具方面，带来近期霸榜 GitHub Trending 的12306抢票、前端代码查重工具、google 网页索引工具与对shell更友好的bun-shell。话不多说，详细内容请大家查阅。如果觉得有收获，动动大拇指点个赞，以示鼓励！</p>
+<h3 id="文章推荐"><a href="#文章推荐" class="headerlink" title="文章推荐"></a>文章推荐</h3><h4 id="穿越时空：2023年前端技术盘点与2024年技术展望"><a href="#穿越时空：2023年前端技术盘点与2024年技术展望" class="headerlink" title="穿越时空：2023年前端技术盘点与2024年技术展望"></a><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/LiygBJqMN8U_vSpAjxMibQ">穿越时空：2023年前端技术盘点与2024年技术展望</a></h4><blockquote>
+<p> 2023 年在前端行业发生的一些重要事情：</p>
+<ol>
+<li>语言与标准：CSS、ES 和 TS 语法持续完善，社区竟现反 TS 声音</li>
+<li>前端框架：主流框架持续完善，黑马 Htmx 与 Qwik 异军突起</li>
+<li>前端基础建设：多种语言助力前端基建的持续发展</li>
+<li> Chrome 浏览器：加强对用户数据安全的保护</li>
+<li>低代码：持续完善的低代码引擎开源社区</li>
+<li>D2C：C2D2C 亮相，大模型赋能 D2C 未来可期</li>
+<li>大模型：大模型应用能力持续完善与落地</li>
+<li>跨端：鸿蒙应用开发为跨端带来新变化</li>
+<li> WASM: 未来将与更多语言和场景结合</li>
+<li>音视频：传统编解码与 AI 编解码并驾齐驱</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>对于未来技术展望</p>
+<ol>
+<li>大模型持续为前端赋能</li>
+<li>拥抱 TypeScript 是前端语言与标准的主旋律</li>
+<li>探索更好服务端渲染是前端框架的大势所趋</li>
+<li>Rust 是前端基础建设的未来</li>
+<li>鸿蒙入局，跨端三分天下格局指日可待</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>TypeScript 依然是前端语言与标准，虽然社区最近对于 TS 的看法各不一样，但是从目前的笔者负责的业务场景看，TS 依然是最佳选择。<br>关于 C2D2C，笔者也抱有期待。通过前端标准化组件与设计标准结合，设计师基于现有组件库输出设计稿，前端研发拿到对应设计稿再转换为可执行代码。由于设计稿和代码使用的是同一套设计系统，设计稿中的组件和最终代码中的组件是一一映射的关系，因此无需进行标注就可以实现组件的精准识别。同时在代码的二次可发与可读性上也会得到很大改善。<br>强势崛起的Qwik也是一个值得关注的框架：号称历史上第一个 O(1) 的前端 SSR 框架。如果你对其 SSR 性能感兴趣，可以通过这篇文章了解。👉🏻<a target="_blank" rel="noopener" href="https://juejin.cn/post/7186161640121827387">点击查看</a><br>👉🏻<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/LiygBJqMN8U_vSpAjxMibQ">阅读全文了解更多内容</a></p>
+</blockquote>
+<h4 id="为什么-2024-年应该使用-AVIF-而不是-JPEG、WebP、PNG-和-GIF"><a href="#为什么-2024-年应该使用-AVIF-而不是-JPEG、WebP、PNG-和-GIF" class="headerlink" title="为什么 2024 年应该使用 AVIF 而不是 JPEG、WebP、PNG 和 GIF"></a><a target="_blank" rel="noopener" href="https://medium.com/@julienetienne/why-you-should-use-avif-over-jpeg-webp-png-and-gif-in-2024-5603ac9d8781">为什么 2024 年应该使用 AVIF 而不是 JPEG、WebP、PNG 和 GIF</a></h4><blockquote>
+<p>avif 对比传统的图片格式，在压缩效率、颜色深度有着明显的优势，但在编解码的效率上相对低一些。不过在新的浏览器环境下尝试 avif 未尝不是一个好的选择。<br><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bdd7a1ee71864e93b2381ad8cebf56fd~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1353&h=287&s=129384&e=png&b=ece1ce" alt="file"><br>附：avif 与 webp 对比</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">特性</th>
+<th>AVIF</th>
+<th>WebP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">压缩效率</td>
+<td>高（更小的文件大小，保持高质量）</td>
+<td>较高但通常不如AVIF</td>
+</tr>
+<tr>
+<td align="center">图像质量</td>
+<td>支持更广泛的颜色范围和动态范围，适合高分辨率图像</td>
+<td>良好，但在颜色和动态范围上不如AVIF</td>
+</tr>
+<tr>
+<td align="center">浏览器兼容性</td>
+<td>相对较新，支持不如WebP广泛</td>
+<td>几乎所有现代浏览器支持</td>
+</tr>
+<tr>
+<td align="center">编解码速度</td>
+<td>编码较慢</td>
+<td>编码和解码速度较快</td>
+</tr>
+<tr>
+<td align="center">功能支持</td>
+<td>支持高动态范围（HDR）和透明度</td>
+<td>支持透明度，有损和无损压缩，但在HDR上支持不足</td>
+</tr>
+<tr>
+<td align="center">应用场景</td>
+<td>适合对图像质量有高要求的应用</td>
+<td>适合需要快速处理和广泛兼容性的应用</td>
+</tr>
+</tbody></table>
+<h4 id="浅谈正则表达式——从原理到实战"><a href="#浅谈正则表达式——从原理到实战" class="headerlink" title="浅谈正则表达式——从原理到实战"></a><a target="_blank" rel="noopener" href="https://juejin.cn/post/7294425916548317199">浅谈正则表达式——从原理到实战</a></h4><blockquote>
+<p>这篇文章是关于正则表达式的深入讨论，从基本语法到实际应用全面介绍了正则表达式的各个方面。内容包括正则表达式的组成、不同类型的字符和匹配模式、贪婪与非贪婪匹配的概念以及它们在性能上的影响。文章还探讨了捕获组、匹配模式和前瞻&#x2F;后顾断言的概念。最后，讨论了正则表达式的底层原理，特别是非确定性有限自动机（NFA）和确定性有限自动机（DFA）在处理正则表达式时的差异。想要深入了解正则的同学，<a target="_blank" rel="noopener" href="https://juejin.cn/post/7294425916548317199">点击阅读全文</a></p>
+</blockquote>
+<h4 id="JavaScript-WTF-Why-does-every-return-true-for-empty-arrays"><a href="#JavaScript-WTF-Why-does-every-return-true-for-empty-arrays" class="headerlink" title="JavaScript WTF: Why does every() return true for empty arrays?"></a><a target="_blank" rel="noopener" href="https://humanwhocodes.com/blog/2023/09/javascript-wtf-why-does-every-return-true-for-empty-array/">JavaScript WTF: Why does every() return true for empty arrays?</a></h4><blockquote>
+<p>文章从数学的角度探讨为，什么当数组为空数组时，<code>[].every(item =&gt; true)</code> 会返回 <code>true</code>, <code>[].some(item =&gt; true)</code>，会返回 <code>false</code>，这一表现是否符合你的直觉。</p>
+<ul>
+<li><code>every</code>: <code>It is vacuously true that all elements of the empty set satisfy any given condition</code></li>
+<li><code>some</code>: <code>The “exists” quantifier states that the result is false for any empty set.</code></li>
+</ul>
+</blockquote>
+<h4 id="the-surprising-things-that-css-can-animate"><a href="#the-surprising-things-that-css-can-animate" class="headerlink" title="the-surprising-things-that-css-can-animate"></a><a target="_blank" rel="noopener" href="https://codersblock.com/blog/the-surprising-things-that-css-can-animate">the-surprising-things-that-css-can-animate</a></h4><blockquote>
+<p>当您想到动画 CSS 属性时，您会想到哪些？文章列举了一些通常与动画无关的属性，用 CSS 可以实现的一些意想不到的动画效果，以及通过动画效果可以实现的一些巧妙的效果来实现动画。</p>
+</blockquote>
+<h4 id="一个健壮的前端轮询"><a href="#一个健壮的前端轮询" class="headerlink" title="一个健壮的前端轮询"></a><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/6AqmZJUwPHrbyNMUejNnCw">一个健壮的前端轮询</a></h4><blockquote>
+<p>文章讨论了在不使用websocket做服务端推送的情况下，如何写出一个健壮的前端轮询。文章提供了一些常见的前端轮询的应用场景以及可能遇到的问题，并逐一给到了解决方案。</p>
+<p>笔者从文章中衍生一个场景，当列表筛选时，每次筛选项的变化，都需要前端重新请求。但是前端筛选项 UI 变化不依赖 API 数据返回，如果此时用户操作过快，同时存在多个筛选请求时，也需要考虑到请求废弃的问题，同样可以借助文章中的思路去解决。</p>
+</blockquote>
+<h3 id="工具推荐"><a href="#工具推荐" class="headerlink" title="工具推荐"></a>工具推荐</h3><h4 id="py12306"><a href="#py12306" class="headerlink" title="py12306"></a><a target="_blank" rel="noopener" href="https://github.com/pjialin/py12306">py12306</a></h4><blockquote>
+<p>还没买到票的同学看过来！一款12306 购票助手，支持集群，多账号，多任务购票以及 Web 页面管理。支持本地部署，快来试试吧！</p>
+</blockquote>
+<h4 id="前端代码重复度检测"><a href="#前端代码重复度检测" class="headerlink" title="前端代码重复度检测"></a><a target="_blank" rel="noopener" href="https://juejin.cn/post/7288699185981095988">前端代码重复度检测</a></h4><blockquote>
+<p>听说过论文查重，那阁下是否听说过代码查重？在前端开发中，代码的重复度是一个常见的问题。重复的代码不仅增加了代码的维护成本，还可能导致程序的低效运行。为了解决这个问题，有许多工具和技术被用来检测和消除代码重复。其中一个被广泛使用的工具就是<code>jscpd</code>。</p>
+</blockquote>
+<h4 id="google-indexing-script"><a href="#google-indexing-script" class="headerlink" title="google-indexing-script"></a><a target="_blank" rel="noopener" href="https://github.com/goenning/google-indexing-script">google-indexing-script</a></h4><blockquote>
+<p>使用此脚本可让你的网站在 48 小时内在 Google 上建立索引。无需任何复杂技巧或黑客手段，只需简单的脚本和 Google API 即可。<br>注意：</p>
+<ol>
+<li>脚本并不会帮助你的网站在 Google 上的排名，只会让 Google 知道你的网站存在。</li>
+<li>脚本使用到 Google Indexing API。虽然不能绝对保证每个页面都被索引到，但最近在 2023 年 12 月测试显示有非常高的成功率。<br><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a362c7d8c0bf439cad5d342a3011c668~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=691&h=483&s=98434&e=png&b=191919" alt="image.png"></li>
+</ol>
+</blockquote>
+<h4 id="the-bun-shell"><a href="#the-bun-shell" class="headerlink" title="the-bun-shell"></a><a target="_blank" rel="noopener" href="https://bun.sh/blog/the-bun-shell">the-bun-shell</a></h4><blockquote>
+<p><code>bun-shell</code> 提供性能更优，操作更简洁的 shell 集成命令，同时也解决了在 JS 中跨平台运行的兼容性问题</p>
+</blockquote>
+<h3 id="更多推荐"><a href="#更多推荐" class="headerlink" title="更多推荐"></a>更多推荐</h3><h4 id="高德地图官方首度揭秘：红绿灯倒计时功能是如何实现的？"><a href="#高德地图官方首度揭秘：红绿灯倒计时功能是如何实现的？" class="headerlink" title="高德地图官方首度揭秘：红绿灯倒计时功能是如何实现的？"></a><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/3_LNM62zoHaJsmvAryujEw">高德地图官方首度揭秘：红绿灯倒计时功能是如何实现的？</a></h4><blockquote>
+<p>近日，高德地图官方发布视频首度揭秘了**“红绿灯倒计时读秒”<strong>功能背后的实现原理，那就是依赖过往车主的</strong>行驶启停规律，运用云端大数据算法<strong>推算出具体红绿灯读秒时间，甚至路口</strong>临时设置移动式红绿灯**，虽然没有接电和接网，但高德地图<strong>依然会显示红绿灯倒计时</strong>状态。<br>笔者曾一度以为高德的红绿灯读秒是接入了交通数据。</p>
+</blockquote>
+<h4 id="GitHub的榜一大佬晒出存款后，大家却想给他捐钱"><a href="#GitHub的榜一大佬晒出存款后，大家却想给他捐钱" class="headerlink" title="GitHub的榜一大佬晒出存款后，大家却想给他捐钱"></a><a target="_blank" rel="noopener" href="https://m.huxiu.com/article/2387934.html?type=text">GitHub的榜一大佬晒出存款后，大家却想给他捐钱</a></h4><blockquote>
+<p>Sindre 是 Github 上拥有最多 Star 的个人。其 Star 个数甚至比阿里巴巴还要多。Sindre 甚至被称为 npm 之神，因为大家用的 npm 包大概率底层直接或间接都依赖了他的软件包。<br>想要了解大佬，👉🏻<a target="_blank" rel="noopener" href="https://m.huxiu.com/article/2387934.html?type=text">点击查看</a></p>
+<p>附：<a target="_blank" rel="noopener" href="https://gitstar-ranking.com/">gitstar-ranking</a></p>
+</blockquote>
+</div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A/">技术周刊</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2024/02/23/2024/0x20240223/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">前端早读精选 - 第七期</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2024/01/26/2024/0x20240126/"><span class="level-item">前端早读精选 - 第五期</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">Hexo</a><p class="is-size-7"><span>&copy; 2024 John Doe</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><!--!--><script src="/js/main.js" defer></script><!--!--></body></html>

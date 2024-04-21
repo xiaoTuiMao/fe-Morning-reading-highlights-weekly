@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><title>Tag: 技术周刊 - Hexo</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Hexo"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hexo"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta property="og:type" content="website"><meta property="og:title" content="Hexo"><meta property="og:url" content="http://example.com/"><meta property="og:site_name" content="Hexo"><meta property="og:locale" content="en_US"><meta property="og:image" content="http://example.com/img/og_image.png"><meta property="article:author" content="John Doe"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="http://example.com/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com"},"headline":"Hexo","image":["http://example.com/img/og_image.png"],"author":{"@type":"Person","name":"John Doe"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject"}},"description":""}</script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.2.0"></head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">Hexo</a></div><div class="navbar-menu"><div class="navbar-end"></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">Tags</a></li><li class="is-active"><a href="#" aria-current="page">技术周刊</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-04-19T00:00:00.000Z" title="2024/4/19 08:00:00">2024-04-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-04-19T03:52:54.191Z" title="2024/4/19 11:52:54">2024-04-19</time></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/04/19/2024/0x20240419/">前端早读精选 - 第十四期</a></p><div class="content"><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/264c2b1d152f49f78bd047b5302f8cd5~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&h=768&s=1365491&e=png&b=dea97b" alt="image.png"></p>
+<blockquote>
+<p>探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。</p>
+<p>**<code>文章推荐</code>**：本期为大家带来对于 React 框架探讨的《因为React，你遗忘或从未了解过的事物》，从0到1创建一款响应式框架，通过这种方式来学习现代化框架的原理、prettier 深度优化背后的事情、css 小技巧，通过css 给两个元素间画连接线</p>
+<p>**<code>工具推荐</code>**：好用的爬虫工具，支持现有主流内容网站–<code>MediaCrawler</code>、强大的数据库实体关系（DBER）在线编辑器–<code>drawdb</code>、AI画图 prompt 词参考 – <code>prompt-marketplace</code>、无需代码即可完成对数据库管理的应用生成工具 – <code>dashpress</code></p>
+<p>**<code>行业新闻</code>**：主流框架的 Signals 被纳入 JavaScript 标准提案了、 Vision Pro 版淘宝，用户可以进行何种交互！</p>
+<p><strong>如果觉得有收获，欢迎大家点赞👍🏻订阅</strong></p>
+</blockquote>
+<h3 id="文章推荐"><a href="#文章推荐" class="headerlink" title="文章推荐"></a>文章推荐</h3><h4 id="因为React，你遗忘或从未了解过的事物"><a href="#因为React，你遗忘或从未了解过的事物" class="headerlink" title="因为React，你遗忘或从未了解过的事物"></a><a target="_blank" rel="noopener" href="https://joshcollinsworth.com/blog/antiquated-react">因为React，你遗忘或从未了解过的事物</a></h4><p>这篇文章探讨了React作为一个前端框架已经不再是最佳选择的理由，并指出了其设计和技术上的局限性。React是为了解决特定大型组织的问题而设计的，但随着时间的推移，它的架构决策逐渐成为了迭代的障碍。其次，React强化了一个观念，即需要为特定框架定制开发包和库，这限制了开发者利用广泛的JavaScript库的潜力。在性能、代码简洁性和灵活性方面，React 与一些现代前端框架存在一定的差距。特别是在状态管理和组件生命周期的处理上，React的规则和复杂性导致它与通用Web平台的兼容性较差。React 的 Hooks 虽然在引入时革新了状态管理和逻辑复用的方式，但在 React在渲染优化方面需要频繁的微管理，如对<code>useMemo</code>和<code>useCallback</code>的复杂区分和<code>useEffect</code>依赖数组的精细控制，而这些在其他框架中已被更智能的自动处理所取代。</p>
+<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ccaf8f44eb0d4011b1cfcb07657ebf22~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1340&h=572&s=140608&e=png&b=fefefe" alt="image.png"><br><strong>👉原文链接👉🏻：</strong> <a target="_blank" rel="noopener" href="https://joshcollinsworth.com/blog/antiquated-react">Things you forgot (or never knew) because of React</a></p>
+<h4 id="通过-DIY-来学习现代-JavaScript-框架的工作方式"><a href="#通过-DIY-来学习现代-JavaScript-框架的工作方式" class="headerlink" title="通过 DIY 来学习现代 JavaScript 框架的工作方式"></a><a target="_blank" rel="noopener" href="https://nolanlawson.com/2023/12/02/lets-learn-how-modern-javascript-frameworks-work-by-building-one/">通过 DIY 来学习现代 JavaScript 框架的工作方式</a></h4><p>这篇文章详细讲述了如何一步步基于响应式（reactivity）来进行DOM更新的设计思路来构建一个现代的JavaScript框架。首先，使用Proxy对象创建响应式系统来监控状态变化。然后，通过将渲染函数绑定到状态变化上，实现当状态更新时自动重新渲染UI。此外，通过使用<code>&lt;template&gt;</code>标签和DOM克隆技术优化DOM操作，减少性能消耗。最后，确保每次状态变化都能触发正确的界面更新，完成响应式框架的构建。</p>
+<p align=center><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fa08fb65c4b5486392c35c7ed0be4171~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=910&h=910&s=160236&e=png&a=1&b=f5df1e" alt="image.png" width="50%" /></p>
+
+<p><strong>👉原文链接👉🏻：</strong> <a target="_blank" rel="noopener" href="https://nolanlawson.com/2023/12/02/lets-learn-how-modern-javascript-frameworks-work-by-building-one/">Let’s learn how modern JavaScript frameworks work by building one</a></p>
+<h4 id="Prettier-性能深度优化"><a href="#Prettier-性能深度优化" class="headerlink" title="Prettier 性能深度优化"></a><a target="_blank" rel="noopener" href="https://prettier.io/blog/2023/11/30/cli-deep-dive.html">Prettier 性能深度优化</a></h4><p>作者Fabio Spampinato从零开始重写了CLI，以便从性能角度考虑进行优化。文件查找优化主要通过并行处理和预先过滤非目标文件来实现，这样可以缩短文件扫描的总体时间。至于配置文件解析的优化，则包括了缓存已解析的配置以减少重复计算，以及优化配置继承逻辑以提高处理速度。通过这些策略，Prettier的CLI 能更快地响应用户命令，特别是在大型项目中，这些优化带来了显著的性能提升。</p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/42e2c451cf10474599e8ca5b9a8f2dc9~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=2374&h=677&s=116781&e=png&b=1a2b34" alt="image.png"></p>
+<p><strong>👉原文链接👉🏻：</strong> <a target="_blank" rel="noopener" href="https://prettier.io/blog/2023/11/30/cli-deep-dive">Prettier’s CLI: A Performance Deep Dive</a></p>
+<h4 id="使用-CSS-绘制连接元素的线条"><a href="#使用-CSS-绘制连接元素的线条" class="headerlink" title="使用 CSS 绘制连接元素的线条"></a><a target="_blank" rel="noopener" href="https://frontendmasters.com/blog/drawing-a-line-to-connect-elements-with-css-anchor-positioning/">使用 CSS 绘制连接元素的线条</a></h4><p>这篇文章探讨了如何使用CSS锚点定位（CSS Anchor Positioning）来连接网页元素。作者通过实例展示了如何用CSS而非大量JavaScript来连接不同列中的单词，形成有趣的词组。具体方法包括使用CSS的<code>anchor-name</code>和<code>anchor()</code>函数定位连接线，以及利用CSS网格布局和数据属性来管理元素。这种方法减少了JavaScript的计算需求，将更多的布局责任交给了浏览器。</p>
+<p><strong>注意：需要使用 Chrome Canary 来查看演示效果</strong></p>
+<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b18d4095dd4f4a0aaa9bb0d3e2791ad8~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1448&h=704&s=63522&e=png&b=e0ffff" alt="image.png"></p>
+<p><strong>👉原文链接👉🏻：</strong> <a target="_blank" rel="noopener" href="https://prettier.io/blog/2023/11/30/cli-deep-dive">Drawing a Line to Connect Elements with CSS Anchor Positioning</a></p>
+<h3 id="工具推荐"><a href="#工具推荐" class="headerlink" title="工具推荐"></a>工具推荐</h3><h4 id="MediaCrawler"><a href="#MediaCrawler" class="headerlink" title="MediaCrawler"></a><a target="_blank" rel="noopener" href="https://github.com/NanmiCoder/MediaCrawler">MediaCrawler</a></h4><p>利用 <a target="_blank" rel="noopener" href="https://playwright.dev/">playwright</a> 搭桥，保留登录成功后的上下文浏览器环境，通过执行JS表达式获取一些加密参数，从而爬取对应网站的数据。目前能抓取小红书、抖音、快手、B站、微博的视频、图片、评论、点赞、转发等信息。</p>
+<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/522348f813134c64bbd6df1fd5819d14~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1660&h=552&s=132365&e=png&b=fdfdfd" alt="image.png"></p>
+<blockquote>
+<p>附：</p>
+<ul>
+<li>该项目使用了  <a target="_blank" rel="noopener" href="https://playwright.dev/">playwright</a>，对  <a target="_blank" rel="noopener" href="https://playwright.dev/">playwright</a> 感兴趣的同学，可以查看<a target="_blank" rel="noopener" href="https://www.browsercat.com/post/ultimate-guide-visual-testing-playwright#getting-started-with-visual-testing">playwright 使用指南</a></li>
+<li>playwright 安装第二步需要下载 Chromium 内核文件,这个过程比较慢。可以先手动下载好这些文件,然后直接复制到对应的目录,跳过第二步的下载过程。能够加快安装速度，避免失败。不同系统对应的安装路径如下:<ul>
+<li>Windows: <code>%USERPROFILE%\AppData\Local\ms-playwright</code></li>
+<li>macOS: <code>~/Library/Caches/ms-playwright</code></li>
+<li>Linux: <code>~/.cache/ms-playwright</code></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h4 id="drawdb"><a href="#drawdb" class="headerlink" title="drawdb"></a><a target="_blank" rel="noopener" href="https://drawdb.vercel.app/">drawdb</a></h4><p>这个开源项目是一个免费、简单、强大的数据库实体关系（DBER）在线编辑器，无需注册即可直接在浏览器中使用。它提供了直观、可视化的操作界面，用户通过点击即可构建数据库表和导出建表语句，还可以导入建表语句，实现可视化编辑、错误检查等。支持 MySQL、PostgreSQL、SQLite、MariaDB、SQL Server 共 5 种常用的关系数据库。</p>
+<p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e8da1815bf2141cfae17a85fbc8b0672~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1015&h=480&s=2078015&e=gif&f=239&b=18171c" alt="drawdb.gif"></p>
+<h4 id="dashpress"><a href="#dashpress" class="headerlink" title="dashpress"></a><a target="_blank" rel="noopener" href="https://github.com/dashpresshq/dashpress">dashpress</a></h4><p>无需编写一行代码即可生成强大的管理应用程序<br><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/667a23fccf6d43daac54bde502f1f367~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1728&h=1117&s=487196&e=png&b=7765d2" alt="image.png"></p>
+<h4 id="prompt-marketplace"><a href="#prompt-marketplace" class="headerlink" title="prompt-marketplace"></a><a target="_blank" rel="noopener" href="https://artiversehub.ai/prompt-marketplace">prompt-marketplace</a></h4><p>适用于多个平台的免费AI图像提示词。每天更新提示<br><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/029d83277089419aa5f38e887e34558a~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=2890&h=1464&s=4510209&e=png&b=262a2d" alt="image.png"></p>
+<h3 id="行业新闻"><a href="#行业新闻" class="headerlink" title="行业新闻"></a>行业新闻</h3><h4 id="JavaScript-原生-Signals-标准提案"><a href="#JavaScript-原生-Signals-标准提案" class="headerlink" title="JavaScript 原生 Signals 标准提案"></a><a target="_blank" rel="noopener" href="https://github.com/tc39/proposal-signals">JavaScript 原生 Signals 标准提案</a></h4><p>关于 Signals 标准提案，该提案与 Promises&#x2F;A+类似，侧重于使 JavaScript 生态系统保持一致。如果这种对齐成功，那么一个标准可能会出现，该标准基于这种经验。几位框架作者正在此处合作共同制定一个可能支持其响应式的通用模型。当前草案是基于 Angular、Bubble、Ember、FAST、MobX、Preact、Qwik、RxJS、Solid、Starbeam、Svelte、Vue、Wiz 等作者&#x2F;维护者的设计输入…</p>
+<h4 id="用-Vision-Pro-逛了一下午淘宝，我发现了一种很新的网购方式"><a href="#用-Vision-Pro-逛了一下午淘宝，我发现了一种很新的网购方式" class="headerlink" title="用 Vision Pro 逛了一下午淘宝，我发现了一种很新的网购方式"></a><a target="_blank" rel="noopener" href="https://www.ifanr.com/1581439">用 Vision Pro 逛了一下午淘宝，我发现了一种很新的网购方式</a></h4><p>未来的网购会是怎样的？<br>足不出户，就能看见商品的 3D 展示；不仅能把产品放大看细节，还能还原 1:1 的真实比例，放在房间的任何角落看看尺寸是否合适；甚至能把毛坯房用虚拟家具堆满，在装修之前就能确定新房的装修风格。</p>
+<blockquote>
+<p>附：作为一个前端开发者，对于这种新的交互模式很感兴趣。这里给大家推荐一款 RN 的 Vision Pro 开发框架 – <a target="_blank" rel="noopener" href="https://github.com/callstack/react-native-visionos">react-native-visionos</a><br><strong>那么问题来了，环境搭好了，请问 Vision Pro 去哪里领呀？</strong></p>
+</blockquote>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-04-12T00:00:00.000Z" title="2024/4/12 08:00:00">2024-04-12</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-04-19T03:52:39.815Z" title="2024/4/19 11:52:39">2024-04-19</time></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/04/12/2024/0x20240412/">前端早读精选 - 第十三期</a></p><div class="content"><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/264c2b1d152f49f78bd047b5302f8cd5~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&h=768&s=1365491&e=png&b=dea97b" alt="image.png"></p>
+<blockquote>
+<p>探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。</p>
+<p>**<code>文章推荐</code>**：本期为大家带来通过可视化的方式解析Promise的执行过程、67 种浏览器调试技巧，不再是无脑console、Node 与 Bun 一个简单的 WebSocket 性能对比、最受欢迎的 CSS 框架排名</p>
+<p>**<code>工具推荐</code>**：用 React 的编码模式去写threeJS – react-three-fiber、写一段文案就能快速生成视频的AI工具 – MoneyPrinterTurbo、利用 Obsidian 插件，也能用上大模型！</p>
+<p>**<code>行业新闻</code>**：国内首个AI程序员入职阿里云</p>
+<p><strong>如果觉得有收获，欢迎大家点赞👍🏻订阅</strong></p>
+</blockquote>
+<h3 id="文章推荐"><a href="#文章推荐" class="headerlink" title="文章推荐"></a>文章推荐</h3><h4 id="可视化-Promise-执行"><a href="#可视化-Promise-执行" class="headerlink" title="可视化 Promise 执行"></a><a target="_blank" rel="noopener" href="https://www.lydiahallie.com/blog/promise-execution">可视化 Promise 执行</a></h4><p>文章讲述了JavaScript中Promise的执行机制，解释了<code>new Promise</code>构造函数如何创建Promise，以及Promise在异步任务中的角色。它详细说明了Promise的解决（resolve）和拒绝（reject）过程，以及微任务队列（Microtask Queue）在事件循环中的作用，展示了Promise如何实现非阻塞操作并改善代码的可读性和可维护性。</p>
+<p><strong>👉原文链接👉🏻：<a target="_blank" rel="noopener" href="https://www.lydiahallie.com/blog/promise-execution">可视化 Promise 执行</a></strong><br><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8b30b1f90ab94183b3b262f26724129c~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=710&h=332&s=175982&e=gif&f=84&b=000000" alt="Apr-12-2024 09-26-02.gif"></p>
+<h4 id="你应该知道的-67-种浏览器调试技巧"><a href="#你应该知道的-67-种浏览器调试技巧" class="headerlink" title="你应该知道的 67 种浏览器调试技巧"></a><a target="_blank" rel="noopener" href="https://alan.norbauer.com/articles/browser-debugging-tricks">你应该知道的 67 种浏览器调试技巧</a></h4><p>这篇文章是关于浏览器调试技巧的深入指南，提供了一系列高级方法以帮助开发者更有效地使用开发者工具进行调试。内容包括利用条件断点、监控调用堆栈、动态更改代码行为以及利用浏览器性能分析工具。作者详细解释了如何通过这些技巧查找和解决代码问题，以及如何优化代码性能，使读者能够在调试过程中更加高效和精确。具体技巧如设置智能断点、修改函数运行时行为和性能测试等都有详尽讨论。</p>
+<p><strong>👉原文链接👉🏻： <a target="_blank" rel="noopener" href="https://alan.norbauer.com/articles/browser-debugging-tricks">你应该知道的 67 种浏览器调试技巧</a></strong></p>
+<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7f741901e90f456b834abf901e237532~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=756&h=337&s=81325&e=gif&f=58&b=fbfbfb" alt="conditional-breakpoint-console-log.gif"></p>
+<h3 id="Node-与-Bun-一个简单的-WebSocket-性能对比"><a href="#Node-与-Bun-一个简单的-WebSocket-性能对比" class="headerlink" title="Node 与 Bun 一个简单的 WebSocket 性能对比"></a><a target="_blank" rel="noopener" href="https://lemire.me/blog/2023/11/25/a-simple-websocket-benchmark-in-javascript-node-js-versus-bun/">Node 与 Bun 一个简单的 WebSocket 性能对比</a></h3><p>文章介绍了使用JavaScript进行的一个简单WebSocket基准测试，比较了Node.js和Bun两个运行时环境。测试结果显示，在使用WebSocket时，Bun比Node.js快约40%，当切换到专门为Bun编写的JavaScript代码时，Bun的速度是Node.js的两倍。文章强调，这个基准测试旨在测量延迟（即消息往返的时间），而非同时支持的请求数量。</p>
+<p><strong>👉原文链接👉🏻：<a target="_blank" rel="noopener" href="https://lemire.me/blog/2023/11/25/a-simple-websocket-benchmark-in-javascript-node-js-versus-bun/">Node 与 Bun 一个简单的 WebSocket 性能对比</a></strong><br><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bc9eacc3a9ac4c0e8806d46c416fac6b~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1284&h=588&s=98878&e=png&b=f7f7f7" alt="image.png"></p>
+<h3 id="The-Best-CSS-Frameworks"><a href="#The-Best-CSS-Frameworks" class="headerlink" title="The Best CSS Frameworks"></a><a target="_blank" rel="noopener" href="https://www.libhunt.com/css">The Best CSS Frameworks</a></h3><p>按 <code>github</code> star 数量排序，40款最受欢迎的 CSS 框架。 <a target="_blank" rel="noopener" href="https://www.libhunt.com/r/bootstrap">Bootstrap</a> 依然强劲！<br><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e76a16f71d3b4c66ac5cd8dc56c4a26b~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1980&h=510&s=174411&e=png&b=fafafa" alt="image.png"></p>
+<h3 id="工具推荐"><a href="#工具推荐" class="headerlink" title="工具推荐"></a>工具推荐</h3><h3 id="react-three-fiber"><a href="#react-three-fiber" class="headerlink" title="react-three-fiber"></a><a target="_blank" rel="noopener" href="https://github.com/pmndrs/react-three-fiber">react-three-fiber</a></h3><p>一款用 react 的开发方式开发 threeJS。一切在 Threejs 中有效的东西都能使用 React 的编码方式实现。并且得益于 React 的调度能力，它在规模上表现优于 Threejs。通过 JSX 的形式标示 threeJS，实际的转换过程<code>&lt;mesh /&gt;</code> 会动态转换成 <code>new THREE.Mesh()</code>。因此 threejs 版本添加、删除或更改功能，它将立即可用。</p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ded11f21e5824e0a8e50ef4e2fc29b13~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1750&h=500&s=773142&e=png&b=e1d0cc" alt="image.png"></p>
+<h4 id="MoneyPrinterTurbo"><a href="#MoneyPrinterTurbo" class="headerlink" title="MoneyPrinterTurbo"></a><a target="_blank" rel="noopener" href="https://github.com/harry0703/MoneyPrinterTurbo">MoneyPrinterTurbo</a></h4><p>利用AI大模型，一键生成高清短视频。只需提供一个视频 <strong>主题</strong> 或 <strong>关键词</strong> ，就可以全自动生成视频文案、视频素材、视频字幕、视频背景音乐，然后合成一个高清的短视频。</p>
+<p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5f70f487632a4d70a412d6eb7cf4790b~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=2730&h=1648&s=751964&e=png&b=ffffff" alt="image.png"></p>
+<h4 id="给你的-Obsidian-插上-AI-大模型引擎"><a href="#给你的-Obsidian-插上-AI-大模型引擎" class="headerlink" title="给你的 Obsidian 插上 AI 大模型引擎"></a><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/at7K_8lEfVzQJq5qnpzvUg">给你的 Obsidian 插上 AI 大模型引擎</a></h4><p>copilot for obsidian的插件和openrouter.ai的AI API，让你的 obsidian 上就能直接使用各种大模型</p>
+<p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a1a4f1a3889249b2bcc46a6e48f3cc94~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1080&h=810&s=370222&e=png&b=272727" alt="image.png"></p>
+<h3 id="行业新闻"><a href="#行业新闻" class="headerlink" title="行业新闻"></a>行业新闻</h3><h4 id="国内首个AI程序员入职阿里云"><a href="#国内首个AI程序员入职阿里云" class="headerlink" title="国内首个AI程序员入职阿里云"></a><a target="_blank" rel="noopener" href="https://www.jiqizhixin.com/articles/2024-04-03-5">国内首个AI程序员入职阿里云</a></h4><p>阿里云首个AI程序员“通义灵码”（工号AI001）的入职阿里云啦！这个AI程序员具有编写代码、调试和优化的能力，可以减轻人类程序员的工作量。它能理解和编写超过200种编程语言，其代码续写、查错和优化能力令人印象深刻。</p>
+<p><strong>大家怎么看 AI 程序员？</strong></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-03-29T00:00:00.000Z" title="2024/3/29 08:00:00">2024-03-29</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-04-19T03:52:22.799Z" title="2024/4/19 11:52:22">2024-04-19</time></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/03/29/2024/0x20240329/">前端早读精选 - 第十二期</a></p><div class="content"><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/264c2b1d152f49f78bd047b5302f8cd5~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&h=768&s=1365491&e=png&b=dea97b" alt="image.png"></p>
+<blockquote>
+<p>探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。</p>
+<p>**<code>文章推荐</code>**：本期为大家带来浏览器原理解析、 通过 Web Component 融合多款前端框架、 浏览器渲染流水线解析与网页动画性能优化、 React 官方的跨端方案 <code>react-strict-dom</code>、 Css 文档对齐小技巧 – <code>hanging-punctuation</code>；</p>
+<p>**<code>工具推荐</code>**：AI 编程伴侣 – <code>GPT PILOT</code>、多平台支持的截图、录屏、录音、录像、录制(动图)gif 工具 – <code>pear-rec</code></p>
+<p>**<code>行业新闻</code>**：AI 手机来了，App 将消亡，前端开发范式变了？</p>
+<p><strong>如果觉得有收获，欢迎大家点赞👍🏻订阅</strong></p>
+</blockquote>
+<h3 id="文章推荐"><a href="#文章推荐" class="headerlink" title="文章推荐"></a>文章推荐</h3><h4 id="推荐-🔥-浏览器原理解析"><a href="#推荐-🔥-浏览器原理解析" class="headerlink" title="[推荐 🔥]浏览器原理解析"></a>[推荐 🔥]<a target="_blank" rel="noopener" href="https://developer.chrome.com/blog/inside-browser-part1?hl=zh-cn">浏览器原理解析</a></h4><p>chrome 团队分享的浏览器原理解析。系列一共有 4 个部分，第一部分主要是深入探讨 Chrome 浏览器，从高级架构到渲染流水线的细节。 第二部分阐述了，Chrome 的内部运作方式，从在浏览器中输入网址开始，到浏览器从互联网提取数据并显示网页，整个过程经历了什么。第三部分将详细阐述渲染程序进程是如何渲染。第四部分介绍 Chrome 如何处理用于显示网站的代码。<strong>相信大家看完对浏览器的工作原理会有更深的理解。</strong></p>
+<p><strong>👉🏻原文链接：<a target="_blank" rel="noopener" href="https://developer.chrome.com/blog/inside-browser-part1?hl=zh-cn">浏览器原理解析</a></strong></p>
+<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/623df4e57e154b8f879ea8ad205049c1~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=865&h=499&s=69142&e=png&b=fefefe" alt="image.png"></p>
+<h4 id="通过-Web-Component-融合多款前端框架-英"><a href="#通过-Web-Component-融合多款前端框架-英" class="headerlink" title="通过 Web Component 融合多款前端框架 [英]"></a><a target="_blank" rel="noopener" href="https://jakelazaroff.com/words/web-components-eliminate-javascript-framework-lock-in/">通过 Web Component 融合多款前端框架</a> [英]</h4><p>作者通过在一个待办事项应用中融合使用了React、Vue、Solid和Svelte四个不同的JavaScript框架，展示了Web组件的互操作性。作者创建了自定义的Web组件，允许每个框架的组件独立运作且相互集成，实现了在单一应用中同时使用多个框架的目标。这种方法展现了Web组件能够跨框架工作的能力，有助于避免开发过程中对某个特定JavaScript框架的依赖，从而提高了代码的复用性和应用的灵活性。<a target="_blank" rel="noopener" href="https://codesandbox.io/p/devbox/polyglot-todos-wm4lwn?file=/src/TodoLayout.solid.jsx">代码地址</a></p>
+<p><strong>👉🏻原文链接：<a target="_blank" rel="noopener" href="https://jakelazaroff.com/words/web-components-eliminate-javascript-framework-lock-in/">Web Components Eliminate JavaScript Framework Lock-in</a></strong></p>
+<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/372ca65f6cb94423b6839bbfaf7f687c~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=935&h=337&s=88192&e=png&b=1d1d1d" alt="image.png"></p>
+<h4 id="浏览器渲染流水线解析与网页动画性能优化"><a href="#浏览器渲染流水线解析与网页动画性能优化" class="headerlink" title="浏览器渲染流水线解析与网页动画性能优化"></a><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/30534023">浏览器渲染流水线解析与网页动画性能优化</a></h4><p>文章全面阐述了浏览器渲染流水线，从Blink引擎处理HTML、CSS到Layer Compositor和Display Compositor的图层管理和最终输出。文章探讨了多进程架构，解释了每个进程在渲染中的作用，并详细讨论了帧的生成及其对动画流畅性的重要性。同时，文章也关注了移动设备上的渲染性能，特别是JavaScript绑定和光栅化的影响，并展望了GPU光栅化等技术对未来渲染流水线的潜在改进。</p>
+<p><strong>👉🏻原文链接：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/30534023">浏览器渲染流水线解析与网页动画性能优化</a></strong></p>
+<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f3c0485e3a9442edaafd810dffdf772f~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=995&h=400&s=38491&e=png&b=fefcfc" alt="image.png"></p>
+<h4 id="react-strict-dom-英"><a href="#react-strict-dom-英" class="headerlink" title="react-strict-dom [英]"></a><a target="_blank" rel="noopener" href="https://szymonrybczak.dev/blog/react-strict-dom">react-strict-dom</a> [英]</h4><p>Meta 官方推出的React Native Web 的继任者，它将允许我们使用一个代码库构建通用应用程序，并使用平台的 API 在多个目标上交付，而不会出现任何妥协或性能问题。<code>react-strict-dom</code> 采用了与 React Native for Web 相反的方法，它利用 Web API 来渲染组件。为此，它添加了两个小的 polyfill，负责将其 API 翻译为 <code>react-native</code> 和 <code>react-dom</code> 两个环境下的原生实现。</p>
+<p><strong>👉🏻原文链接：<a target="_blank" rel="noopener" href="https://szymonrybczak.dev/blog/react-strict-dom">react-strict-dom</a></strong></p>
+<p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a1fcc00725b8482f8907c60b1d60e2b1~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=2090&h=1270&s=1217879&e=png&b=fefefe" alt="image.png"></p>
+<h4 id="CSS-中的hanging-punctuation属性-英"><a href="#CSS-中的hanging-punctuation属性-英" class="headerlink" title="CSS 中的hanging-punctuation属性[英]"></a><a target="_blank" rel="noopener" href="https://chriscoyier.net/2023/11/27/the-hanging-punctuation-property-in-css/">CSS 中的<code>hanging-punctuation</code>属性</a>[英]</h4><p>文章讨论了CSS中的<code>hanging-punctuation</code>属性，该属性通过使标点符号悬挂在文本对齐边缘之外来增强文本可读性，实现更整洁的文本对齐。这个属性对于改善网页设计中的文本布局非常有用，可以使文本跨行对齐更加美观。文章还探讨了如何使用这个属性，它可以采用的不同值，以及它对文本布局的视觉影响。</p>
+<p><strong>👉🏻原文链接：<a target="_blank" rel="noopener" href="https://chriscoyier.net/2023/11/27/the-hanging-punctuation-property-in-css/">CSS 中的<code>hanging-punctuation</code>属性</a></strong></p>
+<p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/130b28523f0f49898024ca9c049c2203~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1024&h=631&s=222469&e=png&b=fdfdfd" alt="image.png"></p>
+<h3 id="工具推荐"><a href="#工具推荐" class="headerlink" title="工具推荐"></a>工具推荐</h3><h4 id="GPT-PILOT"><a href="#GPT-PILOT" class="headerlink" title="GPT PILOT"></a><a target="_blank" rel="noopener" href="https://github.com/Pythagora-io/gpt-pilot">GPT PILOT</a></h4><p>GPT Pilot 是 Pythagora VS Code 扩展的核心技术，旨在提供第一个真正的 AI 开发者伴侣。它不仅仅是一个自动补全或者 PR 消息的助手，而是一个真正的 AI 开发者，可以编写完整的功能，调试它们，与您讨论问题，请求审查等。</p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9dd54a412e4b4f4c9fba362f468eee1c~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=830&h=464&s=287859&e=png&b=1b1b1b" alt="image.png"></p>
+<h4 id="pear-rec"><a href="#pear-rec" class="headerlink" title="pear-rec"></a><a target="_blank" rel="noopener" href="https://github.com/027xiguapi/pear-rec/blob/main/README.zh-CN.md">pear-rec</a></h4><p>pear-rec(梨子 rec) 的跨平台是基于 <code>electronjs</code>,前端是基于 <code>reactjs</code>,截图、录屏、录音、录像、录制(动图)gif 等功能是基于 <code>webrtc</code> 和 <code>webcodecs</code> 的一个项目。</p>
+<p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/167640e83f4e46abb6b249eeecb5c5b8~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=843&h=489&s=280122&e=png&b=fbf9f9" alt="image.png"></p>
+<h3 id="行业新闻"><a href="#行业新闻" class="headerlink" title="行业新闻"></a>行业新闻</h3><h4 id="AI-手机来了，App-将消亡，前端开发范式变了！"><a href="#AI-手机来了，App-将消亡，前端开发范式变了！" class="headerlink" title="AI 手机来了，App 将消亡，前端开发范式变了！"></a><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/TrSZUt6-c9Sw90V9plLl1A">AI 手机来了，App 将消亡，前端开发范式变了！</a></h4><p>自打三星推出首款AI手机<strong>三星Galaxy S24</strong>后，AI 手机的概念越来越火🔥。在上个月的 MWC 2024 上，德国电信联合高通、Brain.ai 推出了一款突破性创新的概念 AI 手机 T phone。与传统智能手机不同，这款手机主打一个“无 App”，它清除了屏幕上的密密麻麻的 App 图标，只留有一个按钮用来激活手机里的 AI 助手，让用户通过类似 ChatGPT 的操作界面来交互。</p>
+<p>这款手机的长期愿景是消灭 App，并干掉 App Store，德国电信 CEO 蒂姆·霍特格斯（Tim Hoettges）在大会上给出了疯狂的预测：“手机 App 将在未来五到十年内消亡”</p>
+<h4 id="各位读者，你怎么看AI手机？"><a href="#各位读者，你怎么看AI手机？" class="headerlink" title="各位读者，你怎么看AI手机？"></a><strong>各位读者，你怎么看AI手机？</strong></h4></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-03-22T00:00:00.000Z" title="2024/3/22 08:00:00">2024-03-22</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-04-19T03:52:00.250Z" title="2024/4/19 11:52:00">2024-04-19</time></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/03/22/2024/0x20240322/">前端早读精选 - 第十一期</a></p><div class="content"><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/264c2b1d152f49f78bd047b5302f8cd5~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&h=768&s=1365491&e=png&b=dea97b" alt="image.png"></p>
+<blockquote>
+<p>探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。</p>
+<p>**<code>文章推荐</code>**：本期为大家带来，E2E 测试框架Playwright使用指南、npm依赖安装风险解析、2024 react 工具指南、TS 中 interface 与 type 使用区别、10 个你应该知道的 VSCode 使用技巧；</p>
+<p>**<code>工具推荐</code>**：更轻量更快的模板引擎 - eta.js、完全开源的高效复现类Sora视频生成方案 - OpenSora</p>
+<p>**<code>行业新闻</code>**：李彦宏“程序员将不再存在”、全球首个AI程序员诞生 Devin</p>
+<p><strong>如果觉得有收获，欢迎大家点赞👍🏻订阅</strong></p>
+</blockquote>
+<h3 id="文章推荐"><a href="#文章推荐" class="headerlink" title="文章推荐"></a>文章推荐</h3><h4 id="Playwright视觉测试终极指南"><a href="#Playwright视觉测试终极指南" class="headerlink" title="Playwright视觉测试终极指南"></a><a target="_blank" rel="noopener" href="https://www.browsercat.com/post/ultimate-guide-visual-testing-playwright">Playwright视觉测试终极指南</a></h4><p>这篇文章是关于如何使用 Playwright 进行视觉测试的终极指南，详细介绍了视觉测试的概念、好处、实施步骤以及最佳实践。通过视觉测试，可以自动验证应用的视觉一致性，捕捉到其他测试方法可能忽略的界面问题。文章详细说明了如何设置和运行视觉测试，包括如何创建和比较快照，以及如何在持续集成&#x2F;持续部署（CI&#x2F;CD）流程中应用视觉测试。</p>
+<blockquote>
+<p>延伸阅读：<br> Playwright 和 Cypress 主要区别及优缺点如下：</p>
+<ul>
+<li><strong>浏览器支持</strong>：Playwright 支持多浏览器（Chrome, Firefox, Safari, Edge），Cypress 主要支持 Chrome, Firefox, Edge。</li>
+<li><strong>运行模式</strong>：Playwright 支持无头和有头模式，Cypress 主要是有头模式。</li>
+<li><strong>网络控制</strong>：Playwright 提供更强的网络请求拦截和模拟能力。</li>
+<li><strong>并行测试</strong>：Playwright 内建支持并行测试，而 Cypress 需要额外配置。</li>
+<li><strong>社区和生态</strong>：Cypress 由于较早发布，拥有更成熟的社区和插件生态。</li>
+</ul>
+<p>综上 Playwright 的优点在于其跨浏览器支持和强大的测试功能，但社区相对较新。Cypress 用户界面友好，易于上手，具有稳定的社区支持，但在浏览器支持和高级测试功能上可能不如 Playwright。</p>
+</blockquote>
+<p><strong>👉 原文链接：<a target="_blank" rel="noopener" href="https://www.browsercat.com/post/ultimate-guide-visual-testing-playwright">Playwright视觉测试终极指南</a></strong></p>
+<p align=center><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5a8bf2b7b6cc48cbb1b1c8f9429ccb44~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=768&h=700&s=156819&e=png&a=1&b=212121" alt="image.png" width="70%" /></p>
+
+<h4 id="npm-安装脚本风险"><a href="#npm-安装脚本风险" class="headerlink" title="npm 安装脚本风险"></a><a target="_blank" rel="noopener" href="https://stacklok.com/blog/how-npm-install-scripts-can-be-weaponized-a-real-life-example-of-a-harmful-npm-package">npm 安装脚本风险</a></h4><p>在安装依赖时，是否有考虑这个开源的包所带来的副作用？文章探讨了npm安装脚本如何被武器化，通过一个有害npm包的实例展示了这种风险。以一个具体的例子介绍了恶意包的工作原理，如何通过<code>preinstall</code>脚本执行危害行为，并讨论了npm安装脚本的正当用途和潜在危险。同时，提供了防范建议，比如使用<code>--ignore-scripts</code>选项，以及利用自动化工具进行依赖分析和执行策略。</p>
+<blockquote>
+<p>延伸阅读：Deno 在安全性的考虑上要比 Node、Bun 更为严格一些，Deno 默认不允许运行时访问外部资源（如文件系统、网络等）除非明确授权，这减少了恶意代码执行的风险。Deno 也不使用 npm，而是直接从 URL 导入模块，这改变了包管理的方式，避免了 npm 中存在的一些安全隐患。</p>
+</blockquote>
+<p><strong>👉 原文链接：<a target="_blank" rel="noopener" href="https://stacklok.com/blog/how-npm-install-scripts-can-be-weaponized-a-real-life-example-of-a-harmful-npm-package">npm 安装脚本风险</a></strong><br><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/75d384f7e3624d6991ea2efa4df38848~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1200&h=675&s=493080&e=png&b=b8d8ea" alt="image.png"></p>
+<h4 id="React-Libraries-You-Should-Use-In-2024"><a href="#React-Libraries-You-Should-Use-In-2024" class="headerlink" title="React Libraries You Should Use In 2024"></a><a target="_blank" rel="noopener" href="https://reedbarger.medium.com/react-libraries-you-should-use-in-2024-4a9fd422a1bd">React Libraries You Should Use In 2024</a></h4><p>文章概述了2024年值得使用的React库，包括开发框架（如Vite和Next.js），包管理器（如NPM和Bun），CSS&#x2F;UI库（如Tailwind CSS和ShadCN），状态管理（推荐Zustand），数据获取（如Tanstack Query和SWR），路由（React Router和Tanstack Router），认证（如Supabase和NextAuth），数据库与ORM（推荐SQL和Prisma），日期时间处理（如date-fns和day.js），表单处理（推荐React Hook Form），拖放功能（推荐DnD Kit），移动应用开发（如React Native和Expo），以及部署（推荐Vercel）。如果你有一个没有历史包袱的 React 工程，不妨考虑这些实践。</p>
+<p><strong>👉 原文链接：<a target="_blank" rel="noopener" href="https://reedbarger.medium.com/react-libraries-you-should-use-in-2024-4a9fd422a1bd">React Libraries You Should Use In 2024</a></strong><br><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c00fa377906446c1be8a6935994901d5~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1400&h=788&s=1515256&e=png&b=19101f" alt="image.png"></p>
+<h4 id="TS-中-interface-与-type-使用区别"><a href="#TS-中-interface-与-type-使用区别" class="headerlink" title="TS 中 interface 与 type 使用区别"></a><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904114925600776">TS 中 interface 与 type 使用区别</a></h4><p>这篇文章介绍了TypeScript中<code>interface</code>和<code>type</code>的使用区别。它讲述了两者的核心功能和使用场景，其中<code>interface</code>主要用于定义数据结构，且可以合并多次声明，而<code>type</code>可以表示不同类型的组合，但不支持合并。这篇文章旨在帮助开发者有效地在TypeScript开发中选择合适的构造使用。</p>
+<p><strong>👉 原文链接： <a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904114925600776">TS 中 interface 与 type 使用区别</a></strong><br><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/137fcb8f231843c5b73c6d33fc88264a~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=2000&h=1105&s=473108&e=png&a=1&b=0169b8" alt="image.png"></p>
+<h4 id="10个VSCode-技巧提升你的研发效率"><a href="#10个VSCode-技巧提升你的研发效率" class="headerlink" title="10个VSCode 技巧提升你的研发效率"></a><a target="_blank" rel="noopener" href="https://medium.com/@rivex59710/10-essential-vs-code-tips-tricks-for-greater-productivity-c84fab03d245">10个VSCode 技巧提升你的研发效率</a></h4><p>这篇文章为VS Code用户提供了十个提高生产力的关键技巧，如使用多光标编辑、利用代码片段快速编程、定制工作区视图等。文章深入浅出地解释了每个技巧，帮助开发者更高效地使用VS Code。阅读完文章，相信你会更熟练的使用 VSCode</p>
+<p><strong>👉 原文链接：<a target="_blank" rel="noopener" href="https://medium.com/@rivex59710/10-essential-vs-code-tips-tricks-for-greater-productivity-c84fab03d245">10个VSCode 技巧提升你的研发效率</a></strong><br> <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5621761f2ca4476692fad409766d6f7a~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=700&h=369&s=316400&e=png&b=282d34" alt="image.png"></p>
+<h3 id="工具推荐"><a href="#工具推荐" class="headerlink" title="工具推荐"></a>工具推荐</h3><h4 id="更轻量更快的模板引擎-eta-js"><a href="#更轻量更快的模板引擎-eta-js" class="headerlink" title="更轻量更快的模板引擎 - eta.js"></a><a target="_blank" rel="noopener" href="https://eta.js.org/">更轻量更快的模板引擎 - eta.js</a></h4><p>Eta.js 是一个轻量级、高性能的嵌入式JavaScript模板引擎，适用于Node.js、Deno和浏览器环境。它使用TypeScript编写，强调优异的性能、配置灵活性和小的捆绑大小。Eta具有零依赖性，压缩后大约3.5KB，并支持Deno、Node和浏览器。它还提供强大的功能，如预编译、部分视图、异步处理和布局支持。<br>与其他模板引擎相比，Eta提供了一些独特的优势：</p>
+<ul>
+<li>与<code>EJS</code>相比，<code>Eta</code>更轻量级，提供更快的模板编译和渲染速度，允许左侧空白控制，提供更灵活的定界符和插件支持，并改进了错误报告机制。</li>
+<li>与<code>doT.js</code>相比，<code>Eta</code>简化了自定义定界符的设置，支持异步处理和运行时部分视图，并提供更准确的字符串和多行注释解析。</li>
+<li>与<code>Handlebars</code>相比，<code>Eta</code>更加轻量和快速，不需要注册大量助手函数就能执行简单任务，同时Eta的模板作为受信任的代码运行，这意味着它可以执行任何合法的JavaScript表达式。</li>
+</ul>
+<p><strong>👉🏻工具官网 <a target="_blank" rel="noopener" href="https://eta.js.org/">更轻量更快的模板引擎 - eta.js</a></strong><br><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/21a27b7ecd4f4004b869bf62b22dfb85~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1076&h=520&s=55448&e=png&b=ffffff" alt="image.png"></p>
+<h4 id="Open-Sora：-完全开源的高效复现类Sora视频生成方案"><a href="#Open-Sora：-完全开源的高效复现类Sora视频生成方案" class="headerlink" title="Open-Sora： 完全开源的高效复现类Sora视频生成方案"></a><a target="_blank" rel="noopener" href="https://github.com/hpcaitech/Open-Sora/blob/main/docs/README_zh.md">Open-Sora： 完全开源的高效复现类Sora视频生成方案</a></h4><p><strong>Open-Sora</strong>项目是一项致力于<strong>高效</strong>制作高质量视频，并使所有人都能使用其模型、工具和内容的计划。 通过采用<strong>开源</strong>原则，Open-Sora 不仅实现了先进视频生成技术的低成本普及，还提供了一个精简且用户友好的方案，简化了视频制作的复杂性。 通过 Open-Sora，我们希望更多开发者一起探索内容创作领域的创新、创造和包容。</p>
+<p><strong>👉🏻工具官网  <a target="_blank" rel="noopener" href="https://github.com/hpcaitech/Open-Sora/blob/main/docs/README_zh.md">Open-Sora： 完全开源的高效复现类Sora视频生成方案</a></strong><br><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/589a528530484fcdb6c4f874670e2f0a~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1412&h=406&s=66624&e=png&b=ffffff" alt="image.png"></p>
+<h3 id="行业新闻"><a href="#行业新闻" class="headerlink" title="行业新闻"></a>行业新闻</h3><h4 id="李彦宏“程序员将不再存在”言论被周鸿祎驳斥，网友怒怼：先把百度程序员都开除了！"><a href="#李彦宏“程序员将不再存在”言论被周鸿祎驳斥，网友怒怼：先把百度程序员都开除了！" class="headerlink" title="李彦宏“程序员将不再存在”言论被周鸿祎驳斥，网友怒怼：先把百度程序员都开除了！"></a><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/gCC2QpiV1Mjaiar4bzEPDw">李彦宏“程序员将不再存在”言论被周鸿祎驳斥，网友怒怼：先把百度程序员都开除了！</a></h4><p>在 3 月 9 日央视的《对话》·开年说节目上，百度创始人、董事长兼 CEO 李彦宏表示，<strong>基本上以后不会存在“程序员”这种职业了，因为只要会说话，人人都会具备程序员的能力。</strong>“未来的编程语言只会剩下两种，一种叫做英文，一种叫做中文，这也是目前世界上人工智能技术最领先的两个语言。”<br>对此网友怒怼：<strong>先把百度程序员都开除了！</strong></p>
+<p><strong>👉🏻 <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/gCC2QpiV1Mjaiar4bzEPDw">原文地址</a></strong></p>
+<h4 id="全球首个AI程序员诞生-Devin"><a href="#全球首个AI程序员诞生-Devin" class="headerlink" title="全球首个AI程序员诞生 Devin"></a><a target="_blank" rel="noopener" href="https://36kr.com/p/2687396960595333">全球首个AI程序员诞生 Devin</a></h4><p>全球首位AI软件工程师Devin诞生了，它掌握全栈技能，云端部署、底层代码、改bug、训练和微调AI模型都不在话下。最可怕的是，它完全不怕996，老黄的预言是彻底成真了！</p>
+<p><strong>👉🏻原文地址 <a target="_blank" rel="noopener" href="https://36kr.com/p/2687396960595333">全球首个AI程序员诞生，码农饭碗一夜被砸，10块IOI金牌华人团队震撼打造，996写代码训练模型</a></strong></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f697c16e44e845b2bba897122563f67a~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1080&h=888&s=524104&e=png&b=0f151f" alt="image.png"></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-03-15T00:00:00.000Z" title="2024/3/15 08:00:00">2024-03-15</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-04-19T03:51:43.690Z" title="2024/4/19 11:51:43">2024-04-19</time></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/03/15/2024/0x20240315/">前端早读精选 - 第十期</a></p><div class="content"><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4a53b7c401594291b4f7a4f74e6adbb7~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&h=768&s=1139745&e=png&b=293446" alt="7a685e255c44d1daa5a11116e14b06d8.png"></p>
+<blockquote>
+<p>探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来，为什么用 Tauri 替换 Electron做桌面软件、如何用 npm+typescript打造完善的monorepo仓库、神奇的CSS实现各类花式提示框、2024了，你该知道的git命令；工具方面，黄仁勋“几乎每天用”的搜索引擎 – Perplexity、AI图片处理工具：image-tools、nvm GUI工具；行业新闻方面，腾讯技术专家总结 15 年工作经验、星舰又炸了，但这也最成功的一次。话不多说，详细内容请大家查阅。<strong>如果觉得有收获，动动大拇指点个赞，以示鼓励！</strong></p>
+</blockquote>
+<h3 id="文章推荐"><a href="#文章推荐" class="headerlink" title="文章推荐"></a>文章推荐</h3><h4 id="为什么选择Tauri-替代-Electron-做桌面应用"><a href="#为什么选择Tauri-替代-Electron-做桌面应用" class="headerlink" title="为什么选择Tauri 替代 Electron 做桌面应用"></a><a target="_blank" rel="noopener" href="https://aptabase.com/blog/why-chose-to-build-on-tauri-instead-electron">为什么选择Tauri 替代 Electron 做桌面应用</a></h4><p>文章深入分析了Electron与Tauri在开发桌面应用方面的对比。Electron，虽然广受欢迎，但因其较大的应用体积和较慢的性能遭到批评。相比之下，Tauri以其轻量级和高性能获得优势，主要使用Rust语言，提供了更高的效率和安全性，尽管存在学习挑战。作者选择Tauri的核心原因包括更小的应用体积、更快的性能和更高的安全性，这些特性使Tauri成为构建现代桌面应用的理想选择。笔者体验过两款框架的开发，在易用性上 <code>Tauri</code> 确实对新手比较好，能够很快上手，但缺点也很明显，Tauri 对系统API 支持的丰富度与社区丰富度上，跟 Electron 相比，确实还有较大差距。</p>
+<h3 id="使用-npm-TypeScript-打造-monorepo-仓库"><a href="#使用-npm-TypeScript-打造-monorepo-仓库" class="headerlink" title="使用 npm + TypeScript 打造 monorepo 仓库"></a><a target="_blank" rel="noopener" href="https://www.yieldcode.blog/post/npm-workspaces/">使用 npm + TypeScript 打造 monorepo 仓库</a></h3><p>文章详细阐述了如何结合npm和TypeScript在monorepo项目中实现高效的依赖管理和模块化构建。通过引入npm工作区，作者展示了如何优化项目结构，使不同的包能够共享依赖，同时保持各自的独立性。此外，文章还提供了关于配置TypeScript来支持monorepo结构的指南，包括设置共享的tsconfig基础配置和解决跨包引用的方法。这种方法旨在提高开发效率，简化项目维护，并优化构建过程。</p>
+<h4 id="用CSS实现提示气泡"><a href="#用CSS实现提示气泡" class="headerlink" title="用CSS实现提示气泡"></a><a target="_blank" rel="noopener" href="https://www.smashingmagazine.com/2024/03/modern-css-tooltips-speech-bubbles-part1/">用CSS实现提示气泡</a></h4><p>针对功能点的提示气泡，是业务开发过程中，常见的需求之一。如何在最小的标记与最大的灵活性的前提下使用 CSS 来完成功能开发呢？文章介绍了 <code>clip-path</code>，<code>border-image</code> 结合 CSS 变量的方式去实现各种复杂场景的气泡功能，同时尽可能的保持灵活性。该系列文章分为两部分，第一部分主要讲述基本的实现功能， <a target="_blank" rel="noopener" href="https://www.smashingmagazine.com/2024/03/modern-css-tooltips-speech-bubbles-part2/">第二部分</a>将探索更多场景下的提示气泡的实现方式。<br><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8f608c02895a48d4b2b80f54dda15de4~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=873&h=213&s=106542&e=png&b=fdfcfc" alt="image.png"></p>
+<h4 id="更好用-git-新命令"><a href="#更好用-git-新命令" class="headerlink" title="更好用 git 新命令"></a><a target="_blank" rel="noopener" href="https://martinheinz.dev/blog/109">更好用 git 新命令</a></h4><p>介绍了几个现代化的Git命令和功能，包括<code>git switch</code>和<code>git restore</code>（自Git版本2.23开始引入），用于切换分支和恢复文件的最后提交版本；<code>git sparse-checkout</code>（自Git版本2.25引入），用于在大型仓库中高效地检出子目录；以及<code>git worktree</code>和<code>git bisect</code>，分别用于管理多个工作树和通过二分查找定位引入错误的提交。</p>
+<h3 id="工具推荐"><a href="#工具推荐" class="headerlink" title="工具推荐"></a>工具推荐</h3><h4 id="perplexity"><a href="#perplexity" class="headerlink" title="perplexity"></a><a target="_blank" rel="noopener" href="https://www.perplexity.ai/">perplexity</a></h4><p>黄仁勋“几乎每天用”的搜索引擎 – Perplexity。Perplexity自称为“世界上首个<strong>对话式搜索引擎</strong>”，核心使命是：<strong>挑战谷歌在搜索引擎领域的主导地位</strong>。与谷歌传统搜索引擎不同，Perplexity并非简单给出网站链接，而是运用先进的人工智能模型，针对用户的搜索问题提供直接、精准的答案，这种模式提升了搜索效率，也使得搜索过程更为智能；<strong>而与ChatGPT等生成式AI相比时效性更强、可溯源</strong>。</p>
+<h4 id="AI-image"><a href="#AI-image" class="headerlink" title="AI-image"></a><a target="_blank" rel="noopener" href="https://ai-image.tools/home">AI-image</a></h4><p>图片处理工具，支持通用抠图、人像抠图、背景替换。</p>
+<ul>
+<li>通用抠图：处理输入图像中的主体，支持商品、人物、动物、植物、汽车等，无需任何额外输入，实现端到端的通用抠图并输出四通道抠图结果，</li>
+<li>人像抠图：处理包含肖像的输入图像，无需任何额外输入，实现端到端的肖像抠图，并输出四通道图像抠图结果</li>
+<li>背景替换：输入一张肖像照片和背景图片，即可生成抠图结果并更改背景，一键完成！</li>
+</ul>
+<p align=center><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0ad801c1dbac49f687bdddf353e7ce3a~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1121&h=634&s=720090&e=png&b=e7e2e2" alt="image.png" width="80%" /></p>
+
+
+<h4 id="nvm-desktop"><a href="#nvm-desktop" class="headerlink" title="nvm-desktop"></a><a target="_blank" rel="noopener" href="https://github.com/1111mp/nvm-desktop/releases/tag/v3.2.0">nvm-desktop</a></h4><p>不习惯使用 NVM CLI，那不妨试试 nvm 的 GUI 软件。<br><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/89ea3ad046ed4d23bf2da2a3c23a918d~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=2070&h=1478&s=414576&e=png&b=0f0d0c" alt="image.png"></p>
+<h3 id="更多推荐"><a href="#更多推荐" class="headerlink" title="更多推荐"></a>更多推荐</h3><h4 id="入行-15-年，我还是觉得编程很难"><a href="#入行-15-年，我还是觉得编程很难" class="headerlink" title="入行 15 年，我还是觉得编程很难"></a><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/B7Z0ROkiBqqxVKkLNR9BxQ">入行 15 年，我还是觉得编程很难</a></h4><p>程序员的职业成长，可能是诸多行业中最难的那一批了：</p>
+<ul>
+<li>校园时学的计算机理论，工作了几乎用不上；</li>
+<li>技术的革新太快，轮子还没精通就被时代淘汰；</li>
+<li>虚拟环境总是顺风顺水，一上生产环境就劫难重重；</li>
+<li>面试时候要求造核弹，工作以后拧螺丝，聊绩效时说没有造核弹的思考；</li>
+<li>觉得技术是最重要的，又觉得只会技术走不远，于是既丢掉了对技术的追求，也没学会对业务的思考；</li>
+<li>……<br>写代码很简单，写好代码很难；编程的精髓是“创造”；技术很重要，但“人”也许更重要；程序员最大的敌人是什么？</li>
+</ul>
+<h4 id="马斯克的星舰又炸了，但这是最成功的一次"><a href="#马斯克的星舰又炸了，但这是最成功的一次" class="headerlink" title="马斯克的星舰又炸了，但这是最成功的一次"></a><a target="_blank" rel="noopener" href="https://36kr.com/p/2689606492761733">马斯克的星舰又炸了，但这是最成功的一次</a></h4><p>目前为止最成功的星舰试飞，目标打卡 2 个半</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-03-08T00:00:00.000Z" title="2024/3/8 08:00:00">2024-03-08</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-04-19T03:51:26.653Z" title="2024/4/19 11:51:26">2024-04-19</time></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/03/08/2024/0x20240308/">前端早读精选 - 第九期</a></p><div class="content"><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/32e482224fc74718b2620ccb656a222a~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&h=768&s=1259866&e=png&b=182a48" alt="7076c7fd399f741a2332e76f6a011d8c.png"></p>
+<p>探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来，CSS 布局单位梳理、如何使用 Performance 打造自己的性能报告、V8 引擎最新更新摘要、如何更好的实现音频倍速播放；工具方面，新的效率神器-&gt;基于截图或网页链接AI自动生成代码、基于图片生成音乐的 AI 工具、上古 NodeJS 框架–Express，迎来新的迭代、Mac 自带图片处理小工具；行业新闻方面，对于现代网站不断膨胀的JS代码的探讨、AI 行业到底有没有护城河。话不多说，详细内容请大家查阅。<strong>如果觉得有收获，动动大拇指点个赞，以示鼓励！</strong></p>
+<h3 id="文章推荐"><a href="#文章推荐" class="headerlink" title="文章推荐"></a>文章推荐</h3><h4 id="CSS-基于容器的相对布局单位"><a href="#CSS-基于容器的相对布局单位" class="headerlink" title="CSS 基于容器的相对布局单位"></a><a target="_blank" rel="noopener" href="https://techhub.iodigital.com/articles/going-beyond-pixels-and-rems-in-css/container-query-length-units">CSS 基于容器的相对布局单位</a></h4><p>虽然当前有很多可用的 CSS 单元，但在日常开发过程中，主要还是像素和 （r）ems 来调整大小和字体。随着CSS规范不断迭代，新的单位属性越来越多，是时候好好整理一下这些单位的含义了。该系列总共分为三部分，本篇文章是第三部分，探讨了CSS中基于容器的长度单位，这是一个新的概念，允许开发者根据元素的容器大小来定义尺寸和间距，而不仅仅是依赖于像素或相对于视口的单位。作者通过实例演示了如何使用这些单位（如<code>cqw</code>和<code>cqh</code>）来创建更灵活和适应不同屏幕尺寸的布局。这些单位提供了一种新的方法来思考和实现响应式设计，使得组件可以根据其父容器的大小动态调整样式。前两部分内容请查阅：<a target="_blank" rel="noopener" href="https://techhub.iodigital.com/articles/going-beyond-pixels-and-rems-in-css/relative-length-units-based-on-font">第一部分-基于字体的相对布局单位</a>、<a target="_blank" rel="noopener" href="https://techhub.iodigital.com/articles/going-beyond-pixels-and-rems-in-css/relative-length-units-based-on-the-viewport">第二部分-基于窗口的相对布局单位</a></p>
+<blockquote>
+<p>附：基于容器的相对布局单位简单总结</p>
+<ul>
+<li><code>cqw</code>：容器查询宽度（Container Query Width）</li>
+<li><code>cqh</code>：容器查询高度（Container Query Height）</li>
+<li><code>cqi</code>：容器查询内联尺寸（Container Query Inline-Size）</li>
+<li><code>cqb</code>：容器查询块尺寸（Container Query Block-Size）</li>
+</ul>
+<p>注意：如果父容器定义了具体的宽度，那么 cqw 与 cqi 的表现形式是一样的。在 flex 布局中，<code>cqi</code> 等于 <code>flex-basis</code> 的值，而在 grid 布局中，<code>cqi</code> 等于 <code>column-width</code> 的值</p>
+</blockquote>
+<h4 id="如何使用性能-API-报告核心-Web-指标"><a href="#如何使用性能-API-报告核心-Web-指标" class="headerlink" title="如何使用性能 API 报告核心 Web 指标"></a><a target="_blank" rel="noopener" href="https://www.smashingmagazine.com/2024/02/reporting-core-web-vitals-performance-api/">如何使用性能 API 报告核心 Web 指标</a></h4><p>这篇文章介绍了如何使用Performance API来报告核心网络体验指标（Core Web Vitals）。Performance API是一套标准，用于通过JavaScript测量和评估性能指标，能够直接在DOM中生成性能指标，为开发者创建自己的报告提供便利。文章还探讨了新的核心网络体验指标——交互到下一次绘制（INP）的测量方法，该指标将在2024年3月替代首次输入延迟（FID）。</p>
+<h4 id="V8-JavaScript-引擎的最新更新摘要"><a href="#V8-JavaScript-引擎的最新更新摘要" class="headerlink" title="V8 JavaScript 引擎的最新更新摘要"></a><a target="_blank" rel="noopener" href="https://blog.appsignal.com/2024/02/28/top-8-recent-v8-in-node-updates.html">V8 JavaScript 引擎的最新更新摘要</a></h4><p>V8 是全球最流行的 JavaScript 引擎，支持 Chrome 和 Node.js 等技术。V8 的开发速度令人印象深刻，每天有多个代码提交，大约每个月都有主要版本。文章探讨了 Google 对 V8 的最新改进与补充。更多V8 迭代信息，可查看<a target="_blank" rel="noopener" href="https://v8.dev/blog/holiday-season-2023">V8 2023 全年总结</a><br><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6270b76dc7114d37826554407bef194d~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1200&h=675&s=204857&e=png&b=0e300e" alt="Pasted image 20240305094636.png"></p>
+<h4 id="不改变音调情况下Audio音频的倍速合成JS实现"><a href="#不改变音调情况下Audio音频的倍速合成JS实现" class="headerlink" title="不改变音调情况下Audio音频的倍速合成JS实现"></a><a target="_blank" rel="noopener" href="https://www.zhangxinxu.com/wordpress/2024/02/js-audioencoder-backplayrate-audiobuffer/">不改变音调情况下Audio音频的倍速合成JS实现</a></h4><p>快节奏的生活，让大家在观看长视频时，时常会开启倍速播放，大家是否想过，当倍速播放时，音频如何尽可能的还完原有音调。如果你也有类似的问题，不妨来看看<a target="_blank" rel="noopener" href="https://www.zhangxinxu.com/life/about/">张鑫旭</a>大佬的解决方案。</p>
+<h3 id="工具推荐"><a href="#工具推荐" class="headerlink" title="工具推荐"></a>工具推荐</h3><h4 id="截图生成代码"><a href="#截图生成代码" class="headerlink" title="截图生成代码"></a><a target="_blank" rel="noopener" href="https://github.com/abi/screenshot-to-code/blob/main/README.md">截图生成代码</a></h4><p>这个简单的应用程序可以将截图转化为代码（HTML&#x2F;Tailwind CSS，或React或Bootstrap或Vue）。它使用GPT-4 Vision（或Claude 3）来生成代码，并使用DALL-E 3生成相似的图像。现在，你也可以输入一个URL来克隆一个现有的网站。</p>
+<p align=center><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1fd61568e92d4133a98aa6818422a918~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1029&h=329&s=262653&e=png&b=faf8f8" alt="image.png" width="70%" /></p>
+
+<h4 id="基于图片生成音频的AI工具"><a href="#基于图片生成音频的AI工具" class="headerlink" title="基于图片生成音频的AI工具"></a><a target="_blank" rel="noopener" href="https://imagetomusic.top/#playground">基于图片生成音频的AI工具</a></h4><p>一款基于图片生成音频的AI工具，只需要上传图片就可以根据图片的特点生成对应的音乐。</p>
+<p>捕捉到了熊猫的快乐精神，文本的文化背景以及<strong>点赞的大拇指</strong>，最后以欢快欢快的旋律，充满弹性的钢琴，欢快的弦乐和欢快的木管乐器，融入了二胡和琵琶等中国传统乐器输出音频，</p>
+<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/38b24eda5bd04f0a9b37cf5445437db4~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=2056&h=896&s=416618&e=png&b=fcfcfc" alt="image.png"></p>
+<h4 id="expressjs"><a href="#expressjs" class="headerlink" title="expressjs"></a><a target="_blank" rel="noopener" href="https://github.com/expressjs/express/releases/tag/4.18.3">expressjs</a></h4><p>号外！号外！上古 NodeJS 服务端框架发布新版本了！！！<br>Express经过了十六个月，迎来了一个新版本。本次更新是一次小版本更新，主要是对历史 bug 的一些修复。话说现在有同学在使用 Express 开发么？大家对 Express 怎么看，欢迎大家在评论区踊跃讨论！</p>
+<h4 id="sips：Mac-自带的可编程图形处理系统"><a href="#sips：Mac-自带的可编程图形处理系统" class="headerlink" title="sips：Mac 自带的可编程图形处理系统"></a><a target="_blank" rel="noopener" href="https://til.simonwillison.net/macos/sips">sips：Mac 自带的可编程图形处理系统</a></h4><p>如果你想把 Mac 上一些 .webp 的图片转换为 .png，那么你可以直接使用 <code>sips</code>。<br><code>sips</code> 是 mac 上默认的系统命令，除了简单的命令行处理外，它还支持编写 <code>JavaScript</code>！！!</p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c388269d255c4df7822c860625b56e1c~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1030&h=766&s=45478&e=gif&f=99&b=000000" alt="sips.gif"></p>
+<h3 id="更多推荐"><a href="#更多推荐" class="headerlink" title="更多推荐"></a>更多推荐</h3><h4 id="不断膨胀的JavaScript"><a href="#不断膨胀的JavaScript" class="headerlink" title="不断膨胀的JavaScript"></a><a target="_blank" rel="noopener" href="https://tonsky.me/blog/js-bloat/">不断膨胀的JavaScript</a></h4><p>文章讨论了2024年前端开发中JavaScript的膨胀问题，通过各种类型的网站（如社交媒体、电子邮件、视频平台等）的实际JavaScript文件大小，揭示了即使是基本功能也可能需要大量的JavaScript代码。作者发现，许多网站的JavaScript大小远远超出了合理范围，例如，谷歌邮箱页面可能需要高达20MB的JavaScript。这种趋势不仅增加了网页加载时间，还影响了浏览器的解析和执行效率，进而影响用户体验和设备电池寿命。作者认为，网站的内容应该比代码更重要，呼吁开发者优化代码以减少不必要的JavaScript膨胀。</p>
+<p>作者分析完这么多网站，发现有一个网站做的很好。那就是 <strong>jQuery 官网</strong><br><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/55c354924d33406cb63576f64c04e9e7~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1440&h=1440&s=355397&e=png&b=fefdfd" alt="Pasted image 20240305101016.png"></p>
+<h4 id="谷歌研究员：“我们的AI没有护城河，OpenAI也没有”"><a href="#谷歌研究员：“我们的AI没有护城河，OpenAI也没有”" class="headerlink" title="谷歌研究员：“我们的AI没有护城河，OpenAI也没有”"></a><a target="_blank" rel="noopener" href="https://juejin.cn/post/7229593695653314597">谷歌研究员：“我们的AI没有护城河，OpenAI也没有”</a></h4><p>谷歌内部正在讨论，如何应对 OpenAI 公司的 ChatGPT。这个研究员提出自己的看法：<strong>即使谷歌全力投入，可能也赢不了这场 AI 竞赛</strong>。原因如下：</p>
+<ol>
+<li><strong>生成式 AI 的核心技术是开源的，任何人都可以获取。</strong></li>
+<li><strong>AI 模型的替代性很强。</strong></li>
+<li><strong>AI 的核心竞争力在于算力和训练语料。</strong></li>
+<li><strong>AI 的研究人员是流动的。</strong></li>
+</ol>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-03-01T00:00:00.000Z" title="2024/3/1 08:00:00">2024-03-01</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-04-19T03:50:47.238Z" title="2024/4/19 11:50:47">2024-04-19</time></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/03/01/2024/0x20240301/">前端早读精选 - 第八期</a></p><div class="content"><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/291ffdd6897247d9b0b33d2c6efca650~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&h=768&s=1187343&e=png&b=1a2c43" alt="e5ecb466330ab390f213a652436407fe.png"><br>探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来，Web 终极拦截技巧，通过hook完成各类神奇的事情、NodeJS 2023 工作总结、NextJS 与 Remix 全方面对比、<code>overflow</code> 使用小技巧；工具方面，<strong>强烈推荐翻译软件：沉浸式翻译</strong>。阅读英文文章的不二之选！、独立开发者出海工具指南。话不多说，详细内容请大家查阅。<strong>如果觉得有收获，动动大拇指点个赞，以示鼓励！</strong></p>
+<h3 id="文章推荐"><a href="#文章推荐" class="headerlink" title="文章推荐"></a>文章推荐</h3><h4 id="Web-终极拦截技巧"><a href="#Web-终极拦截技巧" class="headerlink" title="Web 终极拦截技巧"></a><a target="_blank" rel="noopener" href="https://hughfenghen.github.io/posts/2023/12/23/web-spy/">Web 终极拦截技巧</a></h4><p>在Web开发中使用的一些高级拦截技巧。文章内容包括如何拦截和重写浏览器API、操作事件和DOM元素，以及使用ServiceWorkers和服务器端拦截。此外，文章还探讨了这些技术的实际应用，例如创建沙箱环境和开发通用域名服务。</p>
+<blockquote>
+<p>笔者附录：</p>
+<p>很认同文章开头的一句话：计算机科学领域的任何问题都可以通过增加一个中间层来解决。 —— Butler Lampson。但是在解决问题时增加中间层，更多的是一种临时或者 hack 的解决方案，并不是大部分场景的最佳解决手段。</p>
+<p>在做系统功能拦截时，必要的安全问题也需要考虑。对于代码嵌入，常用的攻击手段，如：XSS、原型污染。关于XSS 攻击手段，想必各位同学都比较了解。这里简单补充一下原型链污染：它发生在攻击者通过修改一个对象的原型（即对象的<code>__proto__</code>属性或通过其原型链）来添加或修改属性时。当这个被污染的原型被应用程序的其他部分使用时，可能会导致意料之外的行为或安全问题。比较知名的攻击事件：<a target="_blank" rel="noopener" href="https://www.anquanke.com/post/id/248170">lodash.defaultsDeep 方法造成的原型链污染</a></p>
+</blockquote>
+<h4 id="nodejs-2023-year-in-review"><a href="#nodejs-2023-year-in-review" class="headerlink" title="nodejs-2023-year-in-review"></a><a target="_blank" rel="noopener" href="https://blog.rafaelgss.dev/nodejs-2023-year-in-review">nodejs-2023-year-in-review</a></h4><p>Rafael，Node.js技术指导委员会成员和Fastify核心团队成员，分享了关于过去一年Node.js演进的有用更新，团队如何确保Node.js经过了充分的测试并且可靠，Node.js外部依赖的变化（在2023年新增了三个），以及Node.js安全性和Web存在方面的增强。</p>
+<blockquote>
+<p>笔者附录：NodeJS 新的吉祥物：Rocket Turtle<br><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/90f196df172d474bb8798f9ee2d85f4e~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=680&h=383&s=34059&e=jpg&b=8cc131" alt="GGycszqXcAEzdNR.jpeg"></p>
+</blockquote>
+<h4 id="Next-js-vs-Remix-A-Developer’s-Dilemma"><a href="#Next-js-vs-Remix-A-Developer’s-Dilemma" class="headerlink" title="Next.js vs. Remix: A Developer’s Dilemma"></a><a target="_blank" rel="noopener" href="https://blog.saeloun.com/2024/02/21/next.js-vs-remix/">Next.js vs. Remix: A Developer’s Dilemma</a></h4><p>Next.js vs. Remix： A Developer’s Dilemma — 比较了各个领域，从各种技术的实现方式到部署、支持和受欢迎程度。</p>
+<h4 id="使用-overflow-clip-替换-overflow-hidden-驱动滚动动画"><a href="#使用-overflow-clip-替换-overflow-hidden-驱动滚动动画" class="headerlink" title="使用 overflow: clip 替换 overflow: hidden 驱动滚动动画"></a><a target="_blank" rel="noopener" href="https://www.bram.us/2024/02/14/scroll-driven-animations-you-want-overflow-clip-not-overflow-hidden/">使用 overflow: clip 替换 overflow: hidden 驱动滚动动画</a></h4><p>当使用<code>animation-timeline: scroll(nearest)</code> 来实现滚动动画时，因为 <code>overflow: hidden</code> 会创建一个滚动容器，它可能会干扰到滚动驱动动画的滚动查找机制。使用 <code>overflow: clip</code> 能有效的规避这个问题。<code>overflow: clip</code> 与  <code>overflow: hidden</code> 的表现形式类似，区别点在与 <code>clip</code> 不会创造滚动容器，且无法通过 JS 改变滚动属性来实现滚动。</p>
+<blockquote>
+<p>笔者附录：</p>
+<p>关于 <code>animation-timeline</code> 属性，提供一种更细粒度的控制方式来协调复杂的动画序列，使得开发者可以更精确地安排动画的执行顺序和同步。如上述例子中的<code>animation-timeline: scroll(nearest)</code>，会根据滚动容器的 scrollTop 去驱动滚动动画百分比。但需要注意的是，当前这个属性还属于实验阶段，<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline">更多信息</a></p>
+</blockquote>
+<h3 id="工具推荐"><a href="#工具推荐" class="headerlink" title="工具推荐"></a>工具推荐</h3><h4 id="沉浸式翻译"><a href="#沉浸式翻译" class="headerlink" title="沉浸式翻译"></a><a target="_blank" rel="noopener" href="https://immersivetranslate.com/">沉浸式翻译</a></h4><p>沉浸式网页双语翻译扩展，支持PDF翻译，双语Epub电子书制作，Youtube&#x2F;Netflix&#x2F;Udemy 等平台双语字幕，支持Deepl&#x2F;Google等多个翻译服务，免费使用。一款免费的，好用的，没有废话的，革命性的，饱受赞誉的，AI 驱动的双语网页翻译扩展，帮助你有效地打破信息差，在手机上也可以用！同时推荐给大家一个使用 AI 翻译时，价格更便宜的接入方式：<a target="_blank" rel="noopener" href="https://doc.aihubmix.com/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8/%E5%9C%A8%E6%B2%89%E6%B5%B8%E5%BC%8F%E7%BF%BB%E8%AF%91%E4%B8%AD%E4%BD%BF%E7%94%A8">aihubmix</a></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c83bdb93964041c8961ec7d3cb01f162~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1280&h=800&s=644624&e=png&b=fbfafa" alt="image.png"></p>
+<h4 id="indie-hacker-tools"><a href="#indie-hacker-tools" class="headerlink" title="indie-hacker-tools"></a><a target="_blank" rel="noopener" href="https://chuhai.tools/">indie-hacker-tools</a></h4><p>出海第一步，搞定工具库。仓库收录了独立开发者出海技术栈和工具，持续整理中……<br><strong>仓库收录标准：</strong></p>
+<ul>
+<li>帮助独立开发者提升开发效率</li>
+<li>帮助独立开发者降低成本</li>
+<li>市场上足够流行</li>
+</ul>
+<h3 id="更多推荐"><a href="#更多推荐" class="headerlink" title="更多推荐"></a>更多推荐</h3><h4 id="职场焦虑症｜如何做自己的思想工作？"><a href="#职场焦虑症｜如何做自己的思想工作？" class="headerlink" title="职场焦虑症｜如何做自己的思想工作？"></a><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/G3wpFnJoOJpY4XKhF0aGqQ">职场焦虑症｜如何做自己的思想工作？</a></h4><p>本文作者根据十年工作经验分享了一些关于职场焦虑症的故事，还有一些应对技巧。希望大家在新的一年，开会不吵架，做项目不倒排。</p>
+<h4 id="在-GitHub-上发现超过-100-000-个受感染的存储库"><a href="#在-GitHub-上发现超过-100-000-个受感染的存储库" class="headerlink" title="在 GitHub 上发现超过 100,000 个受感染的存储库"></a><a target="_blank" rel="noopener" href="https://apiiro.com/blog/malicious-code-campaign-github-repo-confusion-attack/">在 GitHub 上发现超过 100,000 个受感染的存储库</a></h4><p>国外安全研究和数据科学团队发现，去年年中开始的恶意仓库混淆活动出现了复苏，这一次的规模更大。这次攻击影响了超过100,000个GitHub仓库（推测还有数百万个），当不知情的开发者使用看似已知且可信的仓库，实际上这些仓库却被恶意代码感染。</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-02-23T00:00:00.000Z" title="2024/2/23 08:00:00">2024-02-23</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-04-19T03:50:24.718Z" title="2024/4/19 11:50:24">2024-04-19</time></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/02/23/2024/0x20240223/">前端早读精选 - 第七期</a></p><div class="content"><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/08f45407353a412fa5f745cb33cdb6ec~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&h=768&s=1253961&e=png&b=263040" alt="file"></p>
+<p>探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来，React 2024 RoadMap、2024 你应该关注的前端框架、手把手教你如何完成一个开源库的完整流程、利用 qwik 替换react开发微型项目、react-native 对 Apple Vision Pro 支持；工具方面，融合多个 AI 工具的GUI软件 - Noi、AWS 新的 JS runtime - LLRT、迷宫、地形和角色的JavaScript程序生成器 - Labyrinthos。话不多说，详细内容请大家查阅。如果觉得有收获，动动大拇指点个赞，以示鼓励！</p>
+<h3 id="文章推荐"><a href="#文章推荐" class="headerlink" title="文章推荐"></a>文章推荐</h3><h4 id="What-We’ve-Been-Working-On-–-February-2024"><a href="#What-We’ve-Been-Working-On-–-February-2024" class="headerlink" title="What We’ve Been Working On – February 2024"></a><a target="_blank" rel="noopener" href="https://react.dev/blog/2024/02/15/react-labs-what-we-have-been-working-on-february-2024">What We’ve Been Working On – February 2024</a></h4><blockquote>
+<p>React 团队 2024 RoadMap。其中 React Compile 取得了不错的进展，在 Instagram 生产环境中已经落地。React Compiler 能够通过对 JavaScript 规则_和_“React 规则”进行建模来安全地编译代码，从而提高性能。同时也会有相应的语法限制，通过<a target="_blank" rel="noopener" href="https://react.dev/reference/react/StrictMode">启用严格模式</a>并<a target="_blank" rel="noopener" href="https://react.dev/learn/editor-setup#linting">配置 React 的 ESLint 插件</a>来捕获 React 代码中的细微错误，提高当前应用程序的质量，为后续适配 React Compiler 提供基础。React 正在探索使用服务器操作将数据从客户端发送到服务器的解决方案 – <code>Actions</code>。<code>action</code>函数可以同步或异步操作，并且<a target="_blank" rel="noopener" href="https://react.dev/reference/react/use-client"><code>&quot;use client&quot;</code></a>和<a target="_blank" rel="noopener" href="https://react.dev/reference/react/use-server"><code>&quot;use server&quot;</code></a>来们标记代码的执行环境，<code>&quot;use client&quot;</code>指示会生成<code>&lt;script&gt;</code>标签（如<a target="_blank" rel="noopener" href="https://docs.astro.build/en/concepts/islands/#creating-an-island">Astro Island</a>），同时<code>&quot;use server&quot;</code>告诉捆绑器生成 POST 端点（如<a target="_blank" rel="noopener" href="https://trpc.io/docs/concepts">tRPC Mutations</a>），不会将代码打包到JS bundle 中。想要体验上述的部分新功能，可以使用 <code>React Canary</code>，目前 <code>Actions</code> 的能力已经集成到 <code>Canary</code> 版本中。由于当前很多新功能将会是一个<code>breaking change</code>，所以 react 的下一个版本将会是大版本升级 <code>React V19</code>。最后还有一个小的改动，将<code>Offscreen</code> 重新命名为<code>Activity</code>。“Offscreen”这个名称意味着它仅适用于应用程序中不可见的部分，但在研究该功能时，React 团队意识到应用程序的某些部分可能是可见的和不活动的。新名称更准确地反映了将应用程序的某些部分标记为“活动”或“非活动”的行为。</p>
+</blockquote>
+<h4 id="React、Angular、Next-js、Solid-创建者告诉你，2024-年你需要关注哪些框架！"><a href="#React、Angular、Next-js、Solid-创建者告诉你，2024-年你需要关注哪些框架！" class="headerlink" title="React、Angular、Next.js、Solid 创建者告诉你，2024 年你需要关注哪些框架！"></a><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/seGpcCJRa6MMNlmyLQaZpg">React、Angular、Next.js、Solid 创建者告诉你，2024 年你需要关注哪些框架！</a></h4><blockquote>
+<p>在The New Stack上讨论了主要JavaScript前端框架如Angular、Next.js、React和Solid的未来计划和发展。每个框架关注不同的方面：</p>
+<ol>
+<li><strong>Angular</strong>：强调更精细的反应性和使Zone.js可选，这将导致更快的加载时间和初始渲染。</li>
+<li><strong>Next.js</strong>：计划简化缓存，提高性能，并引入新的编译器以加快工具操作速度。</li>
+<li><strong>React</strong>：旨在扩大对React Server Components的采用，并继续开发新功能，如React Forget和Static Hermes。</li>
+<li><strong>Solid</strong>：预计将发布SolidStart 1.0和Solid.js 2.0，专注于基本原语，并提供一个可更换部分的元框架，以提供更大的灵活性。</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>附 <strong>Static Hermes</strong> 的一些信息<br>Static Hermes 是 Hermes 引擎的下一代版本，它在 Hermes 的基础上增加了静态类型检查和提前编译功能，从而进一步提高了 JavaScript 代码的性能。</p>
+<ul>
+<li><strong>静态类型检查</strong>：Static Hermes 可以对 JavaScript 代码进行静态类型检查，从而发现潜在的类型错误并防止其在运行时发生。这可以提高代码的可靠性和安全性。</li>
+<li><strong>提前编译</strong>：Static Hermes 可以将 JavaScript 代码提前编译为原生机器代码，从而提高代码的执行效率。<br><strong>Static Hermes 的主要优势在于：</strong></li>
+<li><strong>更高的性能</strong>：Static Hermes 可以将 JavaScript 代码的执行效率提高到与 C&#x2F;C++ 代码相当的水平。</li>
+<li><strong>更小的代码包</strong>：Static Hermes 可以将 JavaScript 代码包的大小缩小 20% 到 50%。</li>
+<li><strong>更强的安全性</strong>：Static Hermes 可以通过静态类型检查来防止类型错误的发生。<br>相较于 Hermes，Static Hermes 更侧重于编译时，除了更好的性能与安全性也会带来一定的<strong>语法限制</strong>。<a href="%5Bhttps://medium.com/@elves.silva.vieira/javascript-achieves-breakthrough-performance-with-static-hermes-6286b0ac8ef7%5D(https://medium.com/@elves.silva.vieira/javascript-achieves-breakthrough-performance-with-static-hermes-6286b0ac8ef7)">更多信息参考</a></li>
+</ul>
+</blockquote>
+<h4 id="如何使用-TypeScript、测试、GitHub-Actions-发布包并自动发布到-NPM"><a href="#如何使用-TypeScript、测试、GitHub-Actions-发布包并自动发布到-NPM" class="headerlink" title="如何使用 TypeScript、测试、GitHub Actions 发布包并自动发布到 NPM"></a><a target="_blank" rel="noopener" href="https://advancedweb.hu/modern-javascript-library-starter/">如何使用 TypeScript、测试、GitHub Actions 发布包并自动发布到 NPM</a></h4><blockquote>
+<p>文章阐述如何用 TypeScript 编写一个库与对应的单元测试，并将编译后的代码、类型在包中发布。使用 github Action 完成 CI 构建测试流程，最后发布到 NPM。还在本地发包的同学，不妨参考一下该自动化流程。</p>
+</blockquote>
+<h4 id="在Astro中使用-Qwik-替换-react"><a href="#在Astro中使用-Qwik-替换-react" class="headerlink" title="在Astro中使用 Qwik 替换 react"></a><a target="_blank" rel="noopener" href="https://thenewstack.io/take-a-qwik-break-from-react-with-astro/">在Astro中使用 Qwik 替换 react</a></h4><blockquote>
+<p>针对一些轻量级的web项目。使用 Astro构建，默认情况下，它向客户端发送零 JavaScript — 对于快速、轻量级和高性能的内容网站来说非常出色。但有时，我需要一些客户端 JavaScript 来实现交互性。此时，我发现自己很难在普通的 Vanilla JavaScript 还是 React 之间做出选择。<br>一方面，Vanilla JavaScript 通常比 React 更轻量级，但它可能变得难以维护。 React 在某种程度上解决了这个问题，但对于最小的客户端 JavaScript 需求来说，它太重。这个时候不妨考虑一下 react 的替换方案 – <a target="_blank" rel="noopener" href="https://qwik.builder.io/">Qwik</a>。</p>
+</blockquote>
+<h4 id="announcing-react-native-for-apple-vision-pro"><a href="#announcing-react-native-for-apple-vision-pro" class="headerlink" title="announcing-react-native-for-apple-vision-pro"></a><a target="_blank" rel="noopener" href="https://www.callstack.com/blog/announcing-react-native-for-apple-vision-pro">announcing-react-native-for-apple-vision-pro</a></h4><blockquote>
+<p>React Native 现已在 Apple Vision Pro 上可用，为开发人员释放了该平台的全部潜力。与兼容模式不同，这种方法可以在visionOS上实现沉浸式体验和XR功能。<br>还在等什么，花 <code>$3000</code> 上车 Vision Pro 🐶🐶🐶</p>
+</blockquote>
+<h3 id="工具推荐"><a href="#工具推荐" class="headerlink" title="工具推荐"></a>工具推荐</h3><h4 id="Noi"><a href="#Noi" class="headerlink" title="Noi"></a><a target="_blank" rel="noopener" href="https://github.com/lencx/Noi">Noi</a></h4><blockquote>
+<p>集成了多款 AI 应用的 GUI 程序。<br><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7ac5608622074b80a3581f46f9ee065e~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=2406&h=1724&s=1705083&e=png&b=181818" alt="file"></p>
+</blockquote>
+<h4 id="LLRT"><a href="#LLRT" class="headerlink" title="LLRT"></a><a target="_blank" rel="noopener" href="https://github.com/awslabs/llrt">LLRT</a></h4><blockquote>
+<p>LLRT 是一种实验性的轻量级 JavaScript runtime，旨在满足对快速高效的无服务器应用程序不断增长的需求。与 AWS Lambda 上运行的其他 JavaScript 运行时相比，LRT 的启动速度提高了 10 倍以上，总体成本降低了 2 倍。它采用 Rust 构建，利用 QuickJS 作为 JavaScript 引擎，确保高效的内存使用和快速启动。<br>目前可以通过配置 <code>Lambda functions</code> 来使用<code>LLRT</code>。但需要注意的是，LLRT 仅支持一小部分 Node.js API。它不是 Node.js 的替代品，也永远不会。LLRT 适用与对性能要求较高的函数，因此不建议将有 <code>node_modules</code> 依赖的函数进行部署。</p>
+</blockquote>
+<h4 id="Labyrinthos"><a href="#Labyrinthos" class="headerlink" title="Labyrinthos"></a><a target="_blank" rel="noopener" href="https://github.com/yantra-core/Labyrinthos.js">Labyrinthos</a></h4><blockquote>
+<p>一个用于迷宫、地形和角色的JavaScript程序生成器。专为游戏开发者和专业爱好者，迷宫。js 提供了一个非常简单易用的API来制作复杂的，可定制的景观</p>
+</blockquote>
+<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4bc90b55abea42eea4f8a7dbfd1508af~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=877&h=453&s=112265&e=png&b=212121" alt="map-1.png" width="40%" />
+<img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d6918c588556494fa37d1d293cb5c147~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1003&h=962&s=266853&e=png&b=030303" alt="map-2.png" width="21.6%" />
+<img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8fa6a0bc21744009a7b4d75aea0735b6~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=681&h=595&s=291938&e=png&b=030303" alt="map-3.png" width="23.9%"   />
+
+<h3 id="更多推荐"><a href="#更多推荐" class="headerlink" title="更多推荐"></a>更多推荐</h3><h4 id="史上最快大模型炸场！Groq一夜爆红，自研LPU速度碾压英伟达GPU"><a href="#史上最快大模型炸场！Groq一夜爆红，自研LPU速度碾压英伟达GPU" class="headerlink" title="史上最快大模型炸场！Groq一夜爆红，自研LPU速度碾压英伟达GPU"></a><a target="_blank" rel="noopener" href="https://wallstreetcn.com/articles/3708651">史上最快大模型炸场！Groq一夜爆红，自研LPU速度碾压英伟达GPU</a></h4><blockquote>
+<p>还没消化完Sora带来的震撼，又一家硅谷初创企业带着史上最快的大模型和自研芯片LPU霸占了热搜。英伟达的挑战者Groq登场！抛弃GPU，自研LPU！文本生成速度比眨眼还快！推理场景速度比英伟达GPU快10倍，但价格和耗电量都仅为后者十分之一。<br>笔者体验了一下，快是”挺快“的，但是问题回答的准确性有待提高。😂😂😂</p>
+</blockquote>
+<blockquote>
+<p>附：LPU 相关信息<br>LPU是一种较新的概念，专门为机器学习和人工智能应用设计。它们旨在优化深度学习运算和算法。对于专注于深度学习和AI的项目，LPU可能是一个更高效的选择。然而，对于需要更广泛应用和灵活性的场景，GPU可能是更好的选择。</p>
+<ul>
+<li><strong>设计用途</strong>：LPU是一种较新的概念，专门为机器学习和人工智能应用设计。它们旨在优化深度学习运算和算法。</li>
+<li><strong>应用领域</strong>：LPU主要用于深度学习、神经网络训练、数据分析等领域。</li>
+<li><strong>技术特点</strong>：与GPU相比，LPU可能有更专门化的架构，专门针对深度学习的运算需求，比如更快的矩阵乘法和更高效的数据流管理。</li>
+</ul>
+</blockquote>
+<h4 id="因为360，火绒干掉了win-10的电脑桌面。"><a href="#因为360，火绒干掉了win-10的电脑桌面。" class="headerlink" title="因为360，火绒干掉了win 10的电脑桌面。"></a><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/cuaH6VLeulVXO0rTmbm-Kg">因为360，火绒干掉了win 10的电脑桌面。</a></h4><blockquote>
+<p>什么！好端端的我的桌面被干掉了！一场来自操作系统与热门软件间的趣事！</p>
+</blockquote>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-02-02T00:00:00.000Z" title="2024/2/2 08:00:00">2024-02-02</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-04-19T03:49:51.959Z" title="2024/4/19 11:49:51">2024-04-19</time></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/02/02/2024/0x20240202/">前端早读精选 - 第六期</a></p><div class="content"><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/65bd98f6d880498fb41bdf91644633b2~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&h=768&s=1363677&e=png&b=e1b078" alt="file"><br>探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来，来自腾讯的2023前端年度技术盘点与2024技术展望、深度剖析正则原理、新的前端图片格式 -avif、以及css与前端轮训小技巧。工具方面，带来近期霸榜 GitHub Trending 的12306抢票、前端代码查重工具、google 网页索引工具与对shell更友好的bun-shell。话不多说，详细内容请大家查阅。如果觉得有收获，动动大拇指点个赞，以示鼓励！</p>
+<h3 id="文章推荐"><a href="#文章推荐" class="headerlink" title="文章推荐"></a>文章推荐</h3><h4 id="穿越时空：2023年前端技术盘点与2024年技术展望"><a href="#穿越时空：2023年前端技术盘点与2024年技术展望" class="headerlink" title="穿越时空：2023年前端技术盘点与2024年技术展望"></a><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/LiygBJqMN8U_vSpAjxMibQ">穿越时空：2023年前端技术盘点与2024年技术展望</a></h4><blockquote>
+<p> 2023 年在前端行业发生的一些重要事情：</p>
+<ol>
+<li>语言与标准：CSS、ES 和 TS 语法持续完善，社区竟现反 TS 声音</li>
+<li>前端框架：主流框架持续完善，黑马 Htmx 与 Qwik 异军突起</li>
+<li>前端基础建设：多种语言助力前端基建的持续发展</li>
+<li> Chrome 浏览器：加强对用户数据安全的保护</li>
+<li>低代码：持续完善的低代码引擎开源社区</li>
+<li>D2C：C2D2C 亮相，大模型赋能 D2C 未来可期</li>
+<li>大模型：大模型应用能力持续完善与落地</li>
+<li>跨端：鸿蒙应用开发为跨端带来新变化</li>
+<li> WASM: 未来将与更多语言和场景结合</li>
+<li>音视频：传统编解码与 AI 编解码并驾齐驱</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>对于未来技术展望</p>
+<ol>
+<li>大模型持续为前端赋能</li>
+<li>拥抱 TypeScript 是前端语言与标准的主旋律</li>
+<li>探索更好服务端渲染是前端框架的大势所趋</li>
+<li>Rust 是前端基础建设的未来</li>
+<li>鸿蒙入局，跨端三分天下格局指日可待</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>TypeScript 依然是前端语言与标准，虽然社区最近对于 TS 的看法各不一样，但是从目前的笔者负责的业务场景看，TS 依然是最佳选择。<br>关于 C2D2C，笔者也抱有期待。通过前端标准化组件与设计标准结合，设计师基于现有组件库输出设计稿，前端研发拿到对应设计稿再转换为可执行代码。由于设计稿和代码使用的是同一套设计系统，设计稿中的组件和最终代码中的组件是一一映射的关系，因此无需进行标注就可以实现组件的精准识别。同时在代码的二次可发与可读性上也会得到很大改善。<br>强势崛起的Qwik也是一个值得关注的框架：号称历史上第一个 O(1) 的前端 SSR 框架。如果你对其 SSR 性能感兴趣，可以通过这篇文章了解。👉🏻<a target="_blank" rel="noopener" href="https://juejin.cn/post/7186161640121827387">点击查看</a><br>👉🏻<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/LiygBJqMN8U_vSpAjxMibQ">阅读全文了解更多内容</a></p>
+</blockquote>
+<h4 id="为什么-2024-年应该使用-AVIF-而不是-JPEG、WebP、PNG-和-GIF"><a href="#为什么-2024-年应该使用-AVIF-而不是-JPEG、WebP、PNG-和-GIF" class="headerlink" title="为什么 2024 年应该使用 AVIF 而不是 JPEG、WebP、PNG 和 GIF"></a><a target="_blank" rel="noopener" href="https://medium.com/@julienetienne/why-you-should-use-avif-over-jpeg-webp-png-and-gif-in-2024-5603ac9d8781">为什么 2024 年应该使用 AVIF 而不是 JPEG、WebP、PNG 和 GIF</a></h4><blockquote>
+<p>avif 对比传统的图片格式，在压缩效率、颜色深度有着明显的优势，但在编解码的效率上相对低一些。不过在新的浏览器环境下尝试 avif 未尝不是一个好的选择。<br><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bdd7a1ee71864e93b2381ad8cebf56fd~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1353&h=287&s=129384&e=png&b=ece1ce" alt="file"><br>附：avif 与 webp 对比</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">特性</th>
+<th>AVIF</th>
+<th>WebP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">压缩效率</td>
+<td>高（更小的文件大小，保持高质量）</td>
+<td>较高但通常不如AVIF</td>
+</tr>
+<tr>
+<td align="center">图像质量</td>
+<td>支持更广泛的颜色范围和动态范围，适合高分辨率图像</td>
+<td>良好，但在颜色和动态范围上不如AVIF</td>
+</tr>
+<tr>
+<td align="center">浏览器兼容性</td>
+<td>相对较新，支持不如WebP广泛</td>
+<td>几乎所有现代浏览器支持</td>
+</tr>
+<tr>
+<td align="center">编解码速度</td>
+<td>编码较慢</td>
+<td>编码和解码速度较快</td>
+</tr>
+<tr>
+<td align="center">功能支持</td>
+<td>支持高动态范围（HDR）和透明度</td>
+<td>支持透明度，有损和无损压缩，但在HDR上支持不足</td>
+</tr>
+<tr>
+<td align="center">应用场景</td>
+<td>适合对图像质量有高要求的应用</td>
+<td>适合需要快速处理和广泛兼容性的应用</td>
+</tr>
+</tbody></table>
+<h4 id="浅谈正则表达式——从原理到实战"><a href="#浅谈正则表达式——从原理到实战" class="headerlink" title="浅谈正则表达式——从原理到实战"></a><a target="_blank" rel="noopener" href="https://juejin.cn/post/7294425916548317199">浅谈正则表达式——从原理到实战</a></h4><blockquote>
+<p>这篇文章是关于正则表达式的深入讨论，从基本语法到实际应用全面介绍了正则表达式的各个方面。内容包括正则表达式的组成、不同类型的字符和匹配模式、贪婪与非贪婪匹配的概念以及它们在性能上的影响。文章还探讨了捕获组、匹配模式和前瞻&#x2F;后顾断言的概念。最后，讨论了正则表达式的底层原理，特别是非确定性有限自动机（NFA）和确定性有限自动机（DFA）在处理正则表达式时的差异。想要深入了解正则的同学，<a target="_blank" rel="noopener" href="https://juejin.cn/post/7294425916548317199">点击阅读全文</a></p>
+</blockquote>
+<h4 id="JavaScript-WTF-Why-does-every-return-true-for-empty-arrays"><a href="#JavaScript-WTF-Why-does-every-return-true-for-empty-arrays" class="headerlink" title="JavaScript WTF: Why does every() return true for empty arrays?"></a><a target="_blank" rel="noopener" href="https://humanwhocodes.com/blog/2023/09/javascript-wtf-why-does-every-return-true-for-empty-array/">JavaScript WTF: Why does every() return true for empty arrays?</a></h4><blockquote>
+<p>文章从数学的角度探讨为，什么当数组为空数组时，<code>[].every(item =&gt; true)</code> 会返回 <code>true</code>, <code>[].some(item =&gt; true)</code>，会返回 <code>false</code>，这一表现是否符合你的直觉。</p>
+<ul>
+<li><code>every</code>: <code>It is vacuously true that all elements of the empty set satisfy any given condition</code></li>
+<li><code>some</code>: <code>The “exists” quantifier states that the result is false for any empty set.</code></li>
+</ul>
+</blockquote>
+<h4 id="the-surprising-things-that-css-can-animate"><a href="#the-surprising-things-that-css-can-animate" class="headerlink" title="the-surprising-things-that-css-can-animate"></a><a target="_blank" rel="noopener" href="https://codersblock.com/blog/the-surprising-things-that-css-can-animate">the-surprising-things-that-css-can-animate</a></h4><blockquote>
+<p>当您想到动画 CSS 属性时，您会想到哪些？文章列举了一些通常与动画无关的属性，用 CSS 可以实现的一些意想不到的动画效果，以及通过动画效果可以实现的一些巧妙的效果来实现动画。</p>
+</blockquote>
+<h4 id="一个健壮的前端轮询"><a href="#一个健壮的前端轮询" class="headerlink" title="一个健壮的前端轮询"></a><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/6AqmZJUwPHrbyNMUejNnCw">一个健壮的前端轮询</a></h4><blockquote>
+<p>文章讨论了在不使用websocket做服务端推送的情况下，如何写出一个健壮的前端轮询。文章提供了一些常见的前端轮询的应用场景以及可能遇到的问题，并逐一给到了解决方案。</p>
+<p>笔者从文章中衍生一个场景，当列表筛选时，每次筛选项的变化，都需要前端重新请求。但是前端筛选项 UI 变化不依赖 API 数据返回，如果此时用户操作过快，同时存在多个筛选请求时，也需要考虑到请求废弃的问题，同样可以借助文章中的思路去解决。</p>
+</blockquote>
+<h3 id="工具推荐"><a href="#工具推荐" class="headerlink" title="工具推荐"></a>工具推荐</h3><h4 id="py12306"><a href="#py12306" class="headerlink" title="py12306"></a><a target="_blank" rel="noopener" href="https://github.com/pjialin/py12306">py12306</a></h4><blockquote>
+<p>还没买到票的同学看过来！一款12306 购票助手，支持集群，多账号，多任务购票以及 Web 页面管理。支持本地部署，快来试试吧！</p>
+</blockquote>
+<h4 id="前端代码重复度检测"><a href="#前端代码重复度检测" class="headerlink" title="前端代码重复度检测"></a><a target="_blank" rel="noopener" href="https://juejin.cn/post/7288699185981095988">前端代码重复度检测</a></h4><blockquote>
+<p>听说过论文查重，那阁下是否听说过代码查重？在前端开发中，代码的重复度是一个常见的问题。重复的代码不仅增加了代码的维护成本，还可能导致程序的低效运行。为了解决这个问题，有许多工具和技术被用来检测和消除代码重复。其中一个被广泛使用的工具就是<code>jscpd</code>。</p>
+</blockquote>
+<h4 id="google-indexing-script"><a href="#google-indexing-script" class="headerlink" title="google-indexing-script"></a><a target="_blank" rel="noopener" href="https://github.com/goenning/google-indexing-script">google-indexing-script</a></h4><blockquote>
+<p>使用此脚本可让你的网站在 48 小时内在 Google 上建立索引。无需任何复杂技巧或黑客手段，只需简单的脚本和 Google API 即可。<br>注意：</p>
+<ol>
+<li>脚本并不会帮助你的网站在 Google 上的排名，只会让 Google 知道你的网站存在。</li>
+<li>脚本使用到 Google Indexing API。虽然不能绝对保证每个页面都被索引到，但最近在 2023 年 12 月测试显示有非常高的成功率。<br><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a362c7d8c0bf439cad5d342a3011c668~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=691&h=483&s=98434&e=png&b=191919" alt="image.png"></li>
+</ol>
+</blockquote>
+<h4 id="the-bun-shell"><a href="#the-bun-shell" class="headerlink" title="the-bun-shell"></a><a target="_blank" rel="noopener" href="https://bun.sh/blog/the-bun-shell">the-bun-shell</a></h4><blockquote>
+<p><code>bun-shell</code> 提供性能更优，操作更简洁的 shell 集成命令，同时也解决了在 JS 中跨平台运行的兼容性问题</p>
+</blockquote>
+<h3 id="更多推荐"><a href="#更多推荐" class="headerlink" title="更多推荐"></a>更多推荐</h3><h4 id="高德地图官方首度揭秘：红绿灯倒计时功能是如何实现的？"><a href="#高德地图官方首度揭秘：红绿灯倒计时功能是如何实现的？" class="headerlink" title="高德地图官方首度揭秘：红绿灯倒计时功能是如何实现的？"></a><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/3_LNM62zoHaJsmvAryujEw">高德地图官方首度揭秘：红绿灯倒计时功能是如何实现的？</a></h4><blockquote>
+<p>近日，高德地图官方发布视频首度揭秘了**“红绿灯倒计时读秒”<strong>功能背后的实现原理，那就是依赖过往车主的</strong>行驶启停规律，运用云端大数据算法<strong>推算出具体红绿灯读秒时间，甚至路口</strong>临时设置移动式红绿灯**，虽然没有接电和接网，但高德地图<strong>依然会显示红绿灯倒计时</strong>状态。<br>笔者曾一度以为高德的红绿灯读秒是接入了交通数据。</p>
+</blockquote>
+<h4 id="GitHub的榜一大佬晒出存款后，大家却想给他捐钱"><a href="#GitHub的榜一大佬晒出存款后，大家却想给他捐钱" class="headerlink" title="GitHub的榜一大佬晒出存款后，大家却想给他捐钱"></a><a target="_blank" rel="noopener" href="https://m.huxiu.com/article/2387934.html?type=text">GitHub的榜一大佬晒出存款后，大家却想给他捐钱</a></h4><blockquote>
+<p>Sindre 是 Github 上拥有最多 Star 的个人。其 Star 个数甚至比阿里巴巴还要多。Sindre 甚至被称为 npm 之神，因为大家用的 npm 包大概率底层直接或间接都依赖了他的软件包。<br>想要了解大佬，👉🏻<a target="_blank" rel="noopener" href="https://m.huxiu.com/article/2387934.html?type=text">点击查看</a></p>
+<p>附：<a target="_blank" rel="noopener" href="https://gitstar-ranking.com/">gitstar-ranking</a></p>
+</blockquote>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-01-26T00:00:00.000Z" title="2024/1/26 08:00:00">2024-01-26</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-04-19T03:55:38.515Z" title="2024/4/19 11:55:38">2024-04-19</time></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/01/26/2024/0x20240126/">前端早读精选 - 第五期</a></p><div class="content"><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dfff91cb18a34071b4961140e229b622~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&h=768&s=1231459&e=png&b=f1c684" alt="file"></p>
+<p>探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来，WebCodecs web 新视频解码新方案、NodeJS 常用工具库、React 生态、Chrome 与 VSCode 小技巧等。工具方面，新一期的 AI 工具推荐、无需构建的前端框架-ofa、commit CI 小工具。话不多说，详细内容请大家查阅。如果觉得有收获，动动大拇指点个赞，以示鼓励！</p>
+<h3 id="文章推荐"><a href="#文章推荐" class="headerlink" title="文章推荐"></a>文章推荐</h3><h4 id="WebCodecs-开启-Web-音视频新篇章"><a href="#WebCodecs-开启-Web-音视频新篇章" class="headerlink" title="WebCodecs 开启 Web 音视频新篇章"></a><a target="_blank" rel="noopener" href="https://hughfenghen.github.io/posts/2023/10/06/webcodecs-new-era-for-media-on-the-web/">WebCodecs 开启 Web 音视频新篇章</a></h4><blockquote>
+<p>WebCodecs 提供访问编解码能力的接口，可精细控制音视频数据。通过 WebCodecs 可快速实现视频生产。相较于传统使用 JS或者 WASM 实现编解码能力，WebCodecs 提供了更高的编码性能，其编码速度可达到 ffmpeg.wasm 的 20 倍。在视频的消费侧，WebCodecs 支持缓冲延迟控制、逐帧播放、超快速播放、解码控制等。能够支持构建更强、体验更好的视频消费应用。同时在计算维度，能够实现算力成本转移，将服务端的视频转换成本放在用户本地运行，不仅降低了服务运营成本，还能提升用户体验。<a target="_blank" rel="noopener" href="https://hughfenghen.github.io/WebAV/demo/1_1-decode-video">更多 Demo 体验</a></p>
+</blockquote>
+<h4 id="Node-js-Power-Tools-13-Libraries-Every-Developer-Should-Know"><a href="#Node-js-Power-Tools-13-Libraries-Every-Developer-Should-Know" class="headerlink" title="Node.js Power Tools: 13 Libraries Every Developer Should Know"></a><a target="_blank" rel="noopener" href="https://blog.devgenius.io/13-heart-pounding-node-js-libraries-to-ignite-your-next-project-94ee989203b9">Node.js Power Tools: 13 Libraries Every Developer Should Know</a></h4><blockquote>
+<p>文章列举了 NodeJS 日常开放中 13 个常用工具库，涉及数据库、网络请求、邮件、登录验证中间件、异步任务管理、日志输出等。</p>
+</blockquote>
+<h4 id="Use-Chrome-DevTools-Like-a-Senior-Frontend-Developer"><a href="#Use-Chrome-DevTools-Like-a-Senior-Frontend-Developer" class="headerlink" title="Use Chrome DevTools Like a Senior Frontend Developer"></a><a target="_blank" rel="noopener" href="https://javascript.plainenglish.io/use-chrome-devtools-like-a-senior-frontend-developer-97ad3ee47647">Use Chrome DevTools Like a Senior Frontend Developer</a></h4><blockquote>
+<p>调试 Chrome 工具的小技巧包括如何迅速重新发送请求、复制 JavaScript 变量、使用快捷键选择 DOM 元素，屏幕快速截图或精准截图。此外，还能在调试过程中快速安装 NPM 包，以供进一步调试，同时在调试断点时添加条件判断，迅速定位问题所在。欲获取更详细的操作指南，请点击查看完整内容。</p>
+</blockquote>
+<h4 id="10个-VSCode-提效技巧–part1、part2"><a href="#10个-VSCode-提效技巧–part1、part2" class="headerlink" title="10个 VSCode 提效技巧–part1、part2"></a><a target="_blank" rel="noopener" href="https://www.codingbeautydev.com/blog/vscode-tips-tricks">10个 VSCode 提效技巧–part1</a>、<a target="_blank" rel="noopener" href="https://www.codingbeautydev.com/blog/vscode-tips-tricks-2">part2</a></h4><blockquote>
+<p>俗话说”工欲善其事，必先利其器“，文章介绍了 VSCode 在日常开发中的一些实用小技巧，快来看看有哪些你常用的操作可以被快捷替换的！</p>
+</blockquote>
+<h4 id="React-awesome-for-2024"><a href="#React-awesome-for-2024" class="headerlink" title="React awesome for 2024 "></a><a target="_blank" rel="noopener" href="https://www.robinwieruch.de/react-libraries/#starting-a-new-react-project">React awesome for 2024 </a></h4><blockquote>
+<p>让我们来了解一下，围绕 <code>react</code> 的生态库。包含 react 工程创建、包管理，数据状态、SPA 路由管理，UI库、动画库、组件库、单元测试、跨端等一系列生态建设。</p>
+</blockquote>
+<h4 id="简单而强大：这些场景无-JavaScript-也能轻松应对"><a href="#简单而强大：这些场景无-JavaScript-也能轻松应对" class="headerlink" title="简单而强大：这些场景无 JavaScript 也能轻松应对"></a><a target="_blank" rel="noopener" href="https://www.infoq.cn/article/bqpC7hkyz9VREYX6OTpi">简单而强大：这些场景无 JavaScript 也能轻松应对</a></h4><blockquote>
+<p>Web 开发的第一核心原则就是“最小能力原则”。换而言之，也就是当我们实现目标时，应该<strong>选择相对较轻量的编程技术去实现</strong>。由于 HTML 和 CSS 的各项功能都是浏览器原生支持的，因此这些功能通常会有更好的性能、更原生、具备更好的用户体验，对可访问性的支持也更好。虽然并非所有的场景都优于 JS（特别是在可访问性方面），但大多数时候，利用浏览器原生功能来实现复杂逻辑，会给用户带来更好的使用体验。</p>
+</blockquote>
+<blockquote>
+<p>或许换个角度看，可能很多场景我们并不需要前端框架，甚至JavaScript。从新的前端框架的趋势看，越来越多的框架抛弃繁重的框架设计，体现简约。比如最近大火的 <a target="_blank" rel="noopener" href="https://github.com/bigskysoftware/htmx">htmx</a>。虽然笔者并不看好 <a target="_blank" rel="noopener" href="https://github.com/bigskysoftware/htmx">htmx</a>，但从一些特定场景来看，<a target="_blank" rel="noopener" href="https://github.com/bigskysoftware/htmx">htmx</a> 确实更合适。关于 <a target="_blank" rel="noopener" href="https://github.com/bigskysoftware/htmx">htmx</a> 相关推荐：</p>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://www.infoq.cn/article/veskosrskc9xgiyygyku">Htmx 意外走红，我们从 React“退回去”后：代码行数减少 67%，JS 依赖项从 255 下降到 9</a>、</li>
+<li><a target="_blank" rel="noopener" href="https://ahastack.dev/">AHA：结合 Astro、htmx 和 Alpine.js 创建通过网络发送 HTML 的现代 Web 应用程序</a></li>
+</ol>
+</blockquote>
+<h3 id="工具推荐"><a href="#工具推荐" class="headerlink" title="工具推荐"></a>工具推荐</h3><h4 id="no-build-framework-ofa"><a href="#no-build-framework-ofa" class="headerlink" title="no-build framework - ofa"></a><a target="_blank" rel="noopener" href="https://github.com/kirakiray/ofa.js">no-build framework - ofa</a></h4><blockquote>
+<p>基于 Web Components，不需要打包的 MVVM 框架。无需繁琐学习，无需 npm、nodejs、webpack，即刻上手。<br>这让笔者想起了 DHH 先前的言论：”前端不再需要构建”。各位同学，你们怎么看待这件事呢？<br>相关信息：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/DBY8W9gimz3UTC-szJQPPw">前端根本不需要构建！“技术邪教” Ruby on Rails 之父再出激进言论引争议</a>、<a target="_blank" rel="noopener" href="https://www.51cto.com/article/769890.html">DHH 锐评 “打包工具”：前端根本不需要构建 (No Build)</a><br><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/11cd37a483994eb19bb2511526386793~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1301&h=551&s=141538&e=png&b=ffffff" alt="file"></p>
+</blockquote>
+<h4 id="better-commits"><a href="#better-commits" class="headerlink" title="better-commits"></a><a target="_blank" rel="noopener" href="https://github.com/Everduin94/better-commits">better-commits</a></h4><blockquote>
+<p>你是否还在为 commit 信息不准确而烦恼，那么 better-commit 将会是一个不错的选择。很多时候，我们为了快速提交，commit 信息会写的很粗略，这样在后续翻找历史代码时，无法直接从 commit 看出当时的改动是为了干什么，只能通过阅读代码来猜测当时的想法。好的 commit 不仅能够帮助自己记录改动说明，也能帮助他人更好的帮你 review 代码。<br><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/945bfd9b69b746fb9453bbbab2a67097~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=708&h=648&s=215522&e=gif&f=426&b=000000" alt="file"></p>
+</blockquote>
+<h4 id="10个免费的-AI-网站"><a href="#10个免费的-AI-网站" class="headerlink" title="10个免费的 AI 网站"></a><a target="_blank" rel="noopener" href="https://medium.com/@dkjhaj2ee/10-free-ai-websites-you-must-try-5e3589d72130">10个免费的 AI 网站</a></h4><ul>
+<li>AI 降噪：<a target="_blank" rel="noopener" href="https://podcast.adobe.com/enhance">https://podcast.adobe.com/enhance</a></li>
+<li>人声消除器：<a target="_blank" rel="noopener" href="https://vocalremover.org/">https://vocalremover.org/</a> 音乐伴奏自动生成</li>
+<li>室内设计： <a target="_blank" rel="noopener" href="https://www.roomgpt.io/">https://www.roomgpt.io/</a></li>
+<li>内容创作者：<a target="_blank" rel="noopener" href="https://rytr.me/">https://rytr.me/</a>Rytr 是一款人工智能写作助手，可帮助您在短短几秒钟内以极低的成本创建高质量的内容。</li>
+<li>脚本转换视频：<a target="_blank" rel="noopener" href="https://studio.d-id.com/">https://studio.d-id.com/</a></li>
+<li>文生图：<a target="_blank" rel="noopener" href="https://leonardo.ai/">https://leonardo.ai/</a></li>
+<li>创作无版权音乐：<a target="_blank" rel="noopener" href="https://soundful.com/">https://soundful.com/</a></li>
+<li>使用 Adob​​e Firefly 创建和编辑图像: <a target="_blank" rel="noopener" href="https://firefly.adobe.com/">https://firefly.adobe.com/</a></li>
+<li>使用 AI Meme Generator 将文本转换为 Meme:  <a target="_blank" rel="noopener" href="https://www.supermeme.ai/">https://www.supermeme.ai/</a></li>
+<li>Scribble Diffusion：使用 AI 将草图变成精致的图像： <a target="_blank" rel="noopener" href="https://scribblediffusion.com/">https://scribblediffusion.com/</a></li>
+</ul>
+<h3 id="更多推荐"><a href="#更多推荐" class="headerlink" title="更多推荐"></a>更多推荐</h3><h4 id="培养写作习惯的4种简单方法"><a href="#培养写作习惯的4种简单方法" class="headerlink" title="培养写作习惯的4种简单方法"></a><a target="_blank" rel="noopener" href="https://hackernoon.com/4-easy-ways-to-cultivate-a-writing-habit">培养写作习惯的4种简单方法</a></h4><blockquote>
+<ol>
+<li><strong>改变自己的心态</strong>：为了什么而写作，不去考虑结果，而是去感受这个过程。“*Don’t think in terms of the outcome but your identity and process.*”</li>
+<li><strong>有意识的暗示</strong>：当碰到有感触的事情，可以记录下来，潜意识的告诉自己，希望能够将对自己有感触的事情分享出去。</li>
+<li><strong>即时激励，用有吸引力的写作奖励来激励自己</strong>。写作过程中并没有多少多巴胺，但按下发帖按钮却涉及到了。完成一项具有挑战性的任务并取得进展的感觉也是令人欣慰的，你可以通过有意识地认识到这种感觉并记住你正在使你的身份变得更加强大，从而将这种感觉联系起来更强烈。</li>
+<li><strong>让写作尽可能顺畅</strong>：让写作融入你的生活。</li>
+</ol>
+</blockquote>
+<h4 id="2023-年终总结"><a href="#2023-年终总结" class="headerlink" title="2023 年终总结"></a><a target="_blank" rel="noopener" href="https://github.com/saveweb/review-2023">2023 年终总结</a></h4><blockquote>
+<p>你的年终总结写好了吗？不妨让我们来看看其他同学的年度总结吧！项目汇总了 221（持续更新中） 篇年终总结，大家可以挑选自己感兴趣的博主去看看他这一年的年终总结</p>
+</blockquote>
+<h4 id="Web3-游戏在2024的七个预测"><a href="#Web3-游戏在2024的七个预测" class="headerlink" title="Web3 游戏在2024的七个预测"></a><a target="_blank" rel="noopener" href="https://hackernoon.com/web3-gaming-7-predictions-for-2024">Web3 游戏在2024的七个预测</a></h4><blockquote>
+<p>本文深入探讨了 Web3 游戏行业的 7 个关键预测。Web3 游戏的未来取决于其提供引人注目且独特的游戏体验、超越市场趋势和投资者优先事项的能力。<br>早期的 NFT 确实存在很大的投机属性，文章预测不可替代代币（NFT）在游戏行业中的作用正在经历重大转变。 NFT 不再仅仅是投机资产，它正在被重新设想为商业模式中的基本要素。各位同学怎么看，欢迎大家踊跃讨论留言。</p>
+</blockquote>
+</div></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous is-invisible is-hidden-mobile"><a href="/tags/%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A/page/0/">Previous</a></div><div class="pagination-next"><a href="/tags/%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A/page/2/">Next</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link is-current" href="/tags/%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A/">1</a></li><li><a class="pagination-link" href="/tags/%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A/page/2/">2</a></li></ul></nav></div><!--!--><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">Hexo</a><p class="is-size-7"><span>&copy; 2024 John Doe</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><!--!--><script src="/js/main.js" defer></script><!--!--></body></html>

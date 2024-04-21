@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>前端早读精选 - 第十期 - Hexo</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Hexo"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hexo"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来，为什么用 Tauri 替换 Electron做桌面软件、如何用 npm+typescript打造完善的monorepo仓库、神奇的CSS实现各类花式提示框、2024了，你该知道的git命令；工具方面，黄仁勋“几乎每天用”的搜索引擎 – Perplexity、AI图片处理工具：image-tools、nvm"><meta property="og:type" content="article"><meta property="og:title" content="前端早读精选 - 第十期"><meta property="og:url" content="http://example.com/2024/03/15/2024/0x20240315/"><meta property="og:site_name" content="Hexo"><meta property="og:description" content="探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来，为什么用 Tauri 替换 Electron做桌面软件、如何用 npm+typescript打造完善的monorepo仓库、神奇的CSS实现各类花式提示框、2024了，你该知道的git命令；工具方面，黄仁勋“几乎每天用”的搜索引擎 – Perplexity、AI图片处理工具：image-tools、nvm"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4a53b7c401594291b4f7a4f74e6adbb7~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&amp;h=768&amp;s=1139745&amp;e=png&amp;b=293446"><meta property="og:image" content="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8f608c02895a48d4b2b80f54dda15de4~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=873&amp;h=213&amp;s=106542&amp;e=png&amp;b=fdfcfc"><meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0ad801c1dbac49f687bdddf353e7ce3a~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1121&amp;h=634&amp;s=720090&amp;e=png&amp;b=e7e2e2"><meta property="og:image" content="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/89ea3ad046ed4d23bf2da2a3c23a918d~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=2070&amp;h=1478&amp;s=414576&amp;e=png&amp;b=0f0d0c"><meta property="article:published_time" content="2024-03-15T00:00:00.000Z"><meta property="article:modified_time" content="2024-04-19T03:51:43.690Z"><meta property="article:author" content="John Doe"><meta property="article:tag" content="技术周刊"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4a53b7c401594291b4f7a4f74e6adbb7~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&amp;h=768&amp;s=1139745&amp;e=png&amp;b=293446"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/03/15/2024/0x20240315/"},"headline":"前端早读精选 - 第十期","image":[],"datePublished":"2024-03-15T00:00:00.000Z","dateModified":"2024-04-19T03:51:43.690Z","author":{"@type":"Person","name":"John Doe"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject"}},"description":"探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来，为什么用 Tauri 替换 Electron做桌面软件、如何用 npm+typescript打造完善的monorepo仓库、神奇的CSS实现各类花式提示框、2024了，你该知道的git命令；工具方面，黄仁勋“几乎每天用”的搜索引擎 – Perplexity、AI图片处理工具：image-tools、nvm"}</script><link rel="canonical" href="http://example.com/2024/03/15/2024/0x20240315/"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.2.0"></head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">Hexo</a></div><div class="navbar-menu"><div class="navbar-end"></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-03-15T00:00:00.000Z" title="2024/3/15 08:00:00">2024-03-15</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-04-19T03:51:43.690Z" title="2024/4/19 11:51:43">2024-04-19</time></span></div></div><h1 class="title is-3 is-size-4-mobile">前端早读精选 - 第十期</h1><div class="content"><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4a53b7c401594291b4f7a4f74e6adbb7~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&h=768&s=1139745&e=png&b=293446" alt="7a685e255c44d1daa5a11116e14b06d8.png"></p>
+<blockquote>
+<p>探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来，为什么用 Tauri 替换 Electron做桌面软件、如何用 npm+typescript打造完善的monorepo仓库、神奇的CSS实现各类花式提示框、2024了，你该知道的git命令；工具方面，黄仁勋“几乎每天用”的搜索引擎 – Perplexity、AI图片处理工具：image-tools、nvm GUI工具；行业新闻方面，腾讯技术专家总结 15 年工作经验、星舰又炸了，但这也最成功的一次。话不多说，详细内容请大家查阅。<strong>如果觉得有收获，动动大拇指点个赞，以示鼓励！</strong></p>
+</blockquote>
+<h3 id="文章推荐"><a href="#文章推荐" class="headerlink" title="文章推荐"></a>文章推荐</h3><h4 id="为什么选择Tauri-替代-Electron-做桌面应用"><a href="#为什么选择Tauri-替代-Electron-做桌面应用" class="headerlink" title="为什么选择Tauri 替代 Electron 做桌面应用"></a><a target="_blank" rel="noopener" href="https://aptabase.com/blog/why-chose-to-build-on-tauri-instead-electron">为什么选择Tauri 替代 Electron 做桌面应用</a></h4><p>文章深入分析了Electron与Tauri在开发桌面应用方面的对比。Electron，虽然广受欢迎，但因其较大的应用体积和较慢的性能遭到批评。相比之下，Tauri以其轻量级和高性能获得优势，主要使用Rust语言，提供了更高的效率和安全性，尽管存在学习挑战。作者选择Tauri的核心原因包括更小的应用体积、更快的性能和更高的安全性，这些特性使Tauri成为构建现代桌面应用的理想选择。笔者体验过两款框架的开发，在易用性上 <code>Tauri</code> 确实对新手比较好，能够很快上手，但缺点也很明显，Tauri 对系统API 支持的丰富度与社区丰富度上，跟 Electron 相比，确实还有较大差距。</p>
+<h3 id="使用-npm-TypeScript-打造-monorepo-仓库"><a href="#使用-npm-TypeScript-打造-monorepo-仓库" class="headerlink" title="使用 npm + TypeScript 打造 monorepo 仓库"></a><a target="_blank" rel="noopener" href="https://www.yieldcode.blog/post/npm-workspaces/">使用 npm + TypeScript 打造 monorepo 仓库</a></h3><p>文章详细阐述了如何结合npm和TypeScript在monorepo项目中实现高效的依赖管理和模块化构建。通过引入npm工作区，作者展示了如何优化项目结构，使不同的包能够共享依赖，同时保持各自的独立性。此外，文章还提供了关于配置TypeScript来支持monorepo结构的指南，包括设置共享的tsconfig基础配置和解决跨包引用的方法。这种方法旨在提高开发效率，简化项目维护，并优化构建过程。</p>
+<h4 id="用CSS实现提示气泡"><a href="#用CSS实现提示气泡" class="headerlink" title="用CSS实现提示气泡"></a><a target="_blank" rel="noopener" href="https://www.smashingmagazine.com/2024/03/modern-css-tooltips-speech-bubbles-part1/">用CSS实现提示气泡</a></h4><p>针对功能点的提示气泡，是业务开发过程中，常见的需求之一。如何在最小的标记与最大的灵活性的前提下使用 CSS 来完成功能开发呢？文章介绍了 <code>clip-path</code>，<code>border-image</code> 结合 CSS 变量的方式去实现各种复杂场景的气泡功能，同时尽可能的保持灵活性。该系列文章分为两部分，第一部分主要讲述基本的实现功能， <a target="_blank" rel="noopener" href="https://www.smashingmagazine.com/2024/03/modern-css-tooltips-speech-bubbles-part2/">第二部分</a>将探索更多场景下的提示气泡的实现方式。<br><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8f608c02895a48d4b2b80f54dda15de4~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=873&h=213&s=106542&e=png&b=fdfcfc" alt="image.png"></p>
+<h4 id="更好用-git-新命令"><a href="#更好用-git-新命令" class="headerlink" title="更好用 git 新命令"></a><a target="_blank" rel="noopener" href="https://martinheinz.dev/blog/109">更好用 git 新命令</a></h4><p>介绍了几个现代化的Git命令和功能，包括<code>git switch</code>和<code>git restore</code>（自Git版本2.23开始引入），用于切换分支和恢复文件的最后提交版本；<code>git sparse-checkout</code>（自Git版本2.25引入），用于在大型仓库中高效地检出子目录；以及<code>git worktree</code>和<code>git bisect</code>，分别用于管理多个工作树和通过二分查找定位引入错误的提交。</p>
+<h3 id="工具推荐"><a href="#工具推荐" class="headerlink" title="工具推荐"></a>工具推荐</h3><h4 id="perplexity"><a href="#perplexity" class="headerlink" title="perplexity"></a><a target="_blank" rel="noopener" href="https://www.perplexity.ai/">perplexity</a></h4><p>黄仁勋“几乎每天用”的搜索引擎 – Perplexity。Perplexity自称为“世界上首个<strong>对话式搜索引擎</strong>”，核心使命是：<strong>挑战谷歌在搜索引擎领域的主导地位</strong>。与谷歌传统搜索引擎不同，Perplexity并非简单给出网站链接，而是运用先进的人工智能模型，针对用户的搜索问题提供直接、精准的答案，这种模式提升了搜索效率，也使得搜索过程更为智能；<strong>而与ChatGPT等生成式AI相比时效性更强、可溯源</strong>。</p>
+<h4 id="AI-image"><a href="#AI-image" class="headerlink" title="AI-image"></a><a target="_blank" rel="noopener" href="https://ai-image.tools/home">AI-image</a></h4><p>图片处理工具，支持通用抠图、人像抠图、背景替换。</p>
+<ul>
+<li>通用抠图：处理输入图像中的主体，支持商品、人物、动物、植物、汽车等，无需任何额外输入，实现端到端的通用抠图并输出四通道抠图结果，</li>
+<li>人像抠图：处理包含肖像的输入图像，无需任何额外输入，实现端到端的肖像抠图，并输出四通道图像抠图结果</li>
+<li>背景替换：输入一张肖像照片和背景图片，即可生成抠图结果并更改背景，一键完成！</li>
+</ul>
+<p align=center><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0ad801c1dbac49f687bdddf353e7ce3a~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1121&h=634&s=720090&e=png&b=e7e2e2" alt="image.png" width="80%" /></p>
+
+
+<h4 id="nvm-desktop"><a href="#nvm-desktop" class="headerlink" title="nvm-desktop"></a><a target="_blank" rel="noopener" href="https://github.com/1111mp/nvm-desktop/releases/tag/v3.2.0">nvm-desktop</a></h4><p>不习惯使用 NVM CLI，那不妨试试 nvm 的 GUI 软件。<br><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/89ea3ad046ed4d23bf2da2a3c23a918d~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=2070&h=1478&s=414576&e=png&b=0f0d0c" alt="image.png"></p>
+<h3 id="更多推荐"><a href="#更多推荐" class="headerlink" title="更多推荐"></a>更多推荐</h3><h4 id="入行-15-年，我还是觉得编程很难"><a href="#入行-15-年，我还是觉得编程很难" class="headerlink" title="入行 15 年，我还是觉得编程很难"></a><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/B7Z0ROkiBqqxVKkLNR9BxQ">入行 15 年，我还是觉得编程很难</a></h4><p>程序员的职业成长，可能是诸多行业中最难的那一批了：</p>
+<ul>
+<li>校园时学的计算机理论，工作了几乎用不上；</li>
+<li>技术的革新太快，轮子还没精通就被时代淘汰；</li>
+<li>虚拟环境总是顺风顺水，一上生产环境就劫难重重；</li>
+<li>面试时候要求造核弹，工作以后拧螺丝，聊绩效时说没有造核弹的思考；</li>
+<li>觉得技术是最重要的，又觉得只会技术走不远，于是既丢掉了对技术的追求，也没学会对业务的思考；</li>
+<li>……<br>写代码很简单，写好代码很难；编程的精髓是“创造”；技术很重要，但“人”也许更重要；程序员最大的敌人是什么？</li>
+</ul>
+<h4 id="马斯克的星舰又炸了，但这是最成功的一次"><a href="#马斯克的星舰又炸了，但这是最成功的一次" class="headerlink" title="马斯克的星舰又炸了，但这是最成功的一次"></a><a target="_blank" rel="noopener" href="https://36kr.com/p/2689606492761733">马斯克的星舰又炸了，但这是最成功的一次</a></h4><p>目前为止最成功的星舰试飞，目标打卡 2 个半</p>
+</div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A/">技术周刊</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2024/03/22/2024/0x20240322/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">前端早读精选 - 第十一期</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2024/03/08/2024/0x20240308/"><span class="level-item">前端早读精选 - 第九期</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">Hexo</a><p class="is-size-7"><span>&copy; 2024 John Doe</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><!--!--><script src="/js/main.js" defer></script><!--!--></body></html>

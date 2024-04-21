@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>前端早读精选 - 第五期 - Hexo</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Hexo"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hexo"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来，WebCodecs web 新视频解码新方案、NodeJS 常用工具库、React 生态、Chrome 与 VSCode 小技巧等。工具方面，新一期的 AI 工具推荐、无需构建的前端框架-ofa、commit CI 小工具。话不多说，详细内容请大家查阅。如果觉得有收获，动动大拇指点个赞，以示鼓励！ 文章推荐W"><meta property="og:type" content="article"><meta property="og:title" content="前端早读精选 - 第五期"><meta property="og:url" content="http://example.com/2024/01/26/2024/0x20240126/"><meta property="og:site_name" content="Hexo"><meta property="og:description" content="探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来，WebCodecs web 新视频解码新方案、NodeJS 常用工具库、React 生态、Chrome 与 VSCode 小技巧等。工具方面，新一期的 AI 工具推荐、无需构建的前端框架-ofa、commit CI 小工具。话不多说，详细内容请大家查阅。如果觉得有收获，动动大拇指点个赞，以示鼓励！ 文章推荐W"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dfff91cb18a34071b4961140e229b622~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&amp;h=768&amp;s=1231459&amp;e=png&amp;b=f1c684"><meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/11cd37a483994eb19bb2511526386793~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1301&amp;h=551&amp;s=141538&amp;e=png&amp;b=ffffff"><meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/945bfd9b69b746fb9453bbbab2a67097~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=708&amp;h=648&amp;s=215522&amp;e=gif&amp;f=426&amp;b=000000"><meta property="article:published_time" content="2024-01-26T00:00:00.000Z"><meta property="article:modified_time" content="2024-04-19T03:55:38.515Z"><meta property="article:author" content="John Doe"><meta property="article:tag" content="技术周刊"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dfff91cb18a34071b4961140e229b622~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&amp;h=768&amp;s=1231459&amp;e=png&amp;b=f1c684"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/01/26/2024/0x20240126/"},"headline":"前端早读精选 - 第五期","image":[],"datePublished":"2024-01-26T00:00:00.000Z","dateModified":"2024-04-19T03:55:38.515Z","author":{"@type":"Person","name":"John Doe"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject"}},"description":"探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来，WebCodecs web 新视频解码新方案、NodeJS 常用工具库、React 生态、Chrome 与 VSCode 小技巧等。工具方面，新一期的 AI 工具推荐、无需构建的前端框架-ofa、commit CI 小工具。话不多说，详细内容请大家查阅。如果觉得有收获，动动大拇指点个赞，以示鼓励！ 文章推荐W"}</script><link rel="canonical" href="http://example.com/2024/01/26/2024/0x20240126/"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.2.0"></head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">Hexo</a></div><div class="navbar-menu"><div class="navbar-end"></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-01-26T00:00:00.000Z" title="2024/1/26 08:00:00">2024-01-26</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-04-19T03:55:38.515Z" title="2024/4/19 11:55:38">2024-04-19</time></span></div></div><h1 class="title is-3 is-size-4-mobile">前端早读精选 - 第五期</h1><div class="content"><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dfff91cb18a34071b4961140e229b622~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&h=768&s=1231459&e=png&b=f1c684" alt="file"></p>
+<p>探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来，WebCodecs web 新视频解码新方案、NodeJS 常用工具库、React 生态、Chrome 与 VSCode 小技巧等。工具方面，新一期的 AI 工具推荐、无需构建的前端框架-ofa、commit CI 小工具。话不多说，详细内容请大家查阅。如果觉得有收获，动动大拇指点个赞，以示鼓励！</p>
+<h3 id="文章推荐"><a href="#文章推荐" class="headerlink" title="文章推荐"></a>文章推荐</h3><h4 id="WebCodecs-开启-Web-音视频新篇章"><a href="#WebCodecs-开启-Web-音视频新篇章" class="headerlink" title="WebCodecs 开启 Web 音视频新篇章"></a><a target="_blank" rel="noopener" href="https://hughfenghen.github.io/posts/2023/10/06/webcodecs-new-era-for-media-on-the-web/">WebCodecs 开启 Web 音视频新篇章</a></h4><blockquote>
+<p>WebCodecs 提供访问编解码能力的接口，可精细控制音视频数据。通过 WebCodecs 可快速实现视频生产。相较于传统使用 JS或者 WASM 实现编解码能力，WebCodecs 提供了更高的编码性能，其编码速度可达到 ffmpeg.wasm 的 20 倍。在视频的消费侧，WebCodecs 支持缓冲延迟控制、逐帧播放、超快速播放、解码控制等。能够支持构建更强、体验更好的视频消费应用。同时在计算维度，能够实现算力成本转移，将服务端的视频转换成本放在用户本地运行，不仅降低了服务运营成本，还能提升用户体验。<a target="_blank" rel="noopener" href="https://hughfenghen.github.io/WebAV/demo/1_1-decode-video">更多 Demo 体验</a></p>
+</blockquote>
+<h4 id="Node-js-Power-Tools-13-Libraries-Every-Developer-Should-Know"><a href="#Node-js-Power-Tools-13-Libraries-Every-Developer-Should-Know" class="headerlink" title="Node.js Power Tools: 13 Libraries Every Developer Should Know"></a><a target="_blank" rel="noopener" href="https://blog.devgenius.io/13-heart-pounding-node-js-libraries-to-ignite-your-next-project-94ee989203b9">Node.js Power Tools: 13 Libraries Every Developer Should Know</a></h4><blockquote>
+<p>文章列举了 NodeJS 日常开放中 13 个常用工具库，涉及数据库、网络请求、邮件、登录验证中间件、异步任务管理、日志输出等。</p>
+</blockquote>
+<h4 id="Use-Chrome-DevTools-Like-a-Senior-Frontend-Developer"><a href="#Use-Chrome-DevTools-Like-a-Senior-Frontend-Developer" class="headerlink" title="Use Chrome DevTools Like a Senior Frontend Developer"></a><a target="_blank" rel="noopener" href="https://javascript.plainenglish.io/use-chrome-devtools-like-a-senior-frontend-developer-97ad3ee47647">Use Chrome DevTools Like a Senior Frontend Developer</a></h4><blockquote>
+<p>调试 Chrome 工具的小技巧包括如何迅速重新发送请求、复制 JavaScript 变量、使用快捷键选择 DOM 元素，屏幕快速截图或精准截图。此外，还能在调试过程中快速安装 NPM 包，以供进一步调试，同时在调试断点时添加条件判断，迅速定位问题所在。欲获取更详细的操作指南，请点击查看完整内容。</p>
+</blockquote>
+<h4 id="10个-VSCode-提效技巧–part1、part2"><a href="#10个-VSCode-提效技巧–part1、part2" class="headerlink" title="10个 VSCode 提效技巧–part1、part2"></a><a target="_blank" rel="noopener" href="https://www.codingbeautydev.com/blog/vscode-tips-tricks">10个 VSCode 提效技巧–part1</a>、<a target="_blank" rel="noopener" href="https://www.codingbeautydev.com/blog/vscode-tips-tricks-2">part2</a></h4><blockquote>
+<p>俗话说”工欲善其事，必先利其器“，文章介绍了 VSCode 在日常开发中的一些实用小技巧，快来看看有哪些你常用的操作可以被快捷替换的！</p>
+</blockquote>
+<h4 id="React-awesome-for-2024"><a href="#React-awesome-for-2024" class="headerlink" title="React awesome for 2024 "></a><a target="_blank" rel="noopener" href="https://www.robinwieruch.de/react-libraries/#starting-a-new-react-project">React awesome for 2024 </a></h4><blockquote>
+<p>让我们来了解一下，围绕 <code>react</code> 的生态库。包含 react 工程创建、包管理，数据状态、SPA 路由管理，UI库、动画库、组件库、单元测试、跨端等一系列生态建设。</p>
+</blockquote>
+<h4 id="简单而强大：这些场景无-JavaScript-也能轻松应对"><a href="#简单而强大：这些场景无-JavaScript-也能轻松应对" class="headerlink" title="简单而强大：这些场景无 JavaScript 也能轻松应对"></a><a target="_blank" rel="noopener" href="https://www.infoq.cn/article/bqpC7hkyz9VREYX6OTpi">简单而强大：这些场景无 JavaScript 也能轻松应对</a></h4><blockquote>
+<p>Web 开发的第一核心原则就是“最小能力原则”。换而言之，也就是当我们实现目标时，应该<strong>选择相对较轻量的编程技术去实现</strong>。由于 HTML 和 CSS 的各项功能都是浏览器原生支持的，因此这些功能通常会有更好的性能、更原生、具备更好的用户体验，对可访问性的支持也更好。虽然并非所有的场景都优于 JS（特别是在可访问性方面），但大多数时候，利用浏览器原生功能来实现复杂逻辑，会给用户带来更好的使用体验。</p>
+</blockquote>
+<blockquote>
+<p>或许换个角度看，可能很多场景我们并不需要前端框架，甚至JavaScript。从新的前端框架的趋势看，越来越多的框架抛弃繁重的框架设计，体现简约。比如最近大火的 <a target="_blank" rel="noopener" href="https://github.com/bigskysoftware/htmx">htmx</a>。虽然笔者并不看好 <a target="_blank" rel="noopener" href="https://github.com/bigskysoftware/htmx">htmx</a>，但从一些特定场景来看，<a target="_blank" rel="noopener" href="https://github.com/bigskysoftware/htmx">htmx</a> 确实更合适。关于 <a target="_blank" rel="noopener" href="https://github.com/bigskysoftware/htmx">htmx</a> 相关推荐：</p>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://www.infoq.cn/article/veskosrskc9xgiyygyku">Htmx 意外走红，我们从 React“退回去”后：代码行数减少 67%，JS 依赖项从 255 下降到 9</a>、</li>
+<li><a target="_blank" rel="noopener" href="https://ahastack.dev/">AHA：结合 Astro、htmx 和 Alpine.js 创建通过网络发送 HTML 的现代 Web 应用程序</a></li>
+</ol>
+</blockquote>
+<h3 id="工具推荐"><a href="#工具推荐" class="headerlink" title="工具推荐"></a>工具推荐</h3><h4 id="no-build-framework-ofa"><a href="#no-build-framework-ofa" class="headerlink" title="no-build framework - ofa"></a><a target="_blank" rel="noopener" href="https://github.com/kirakiray/ofa.js">no-build framework - ofa</a></h4><blockquote>
+<p>基于 Web Components，不需要打包的 MVVM 框架。无需繁琐学习，无需 npm、nodejs、webpack，即刻上手。<br>这让笔者想起了 DHH 先前的言论：”前端不再需要构建”。各位同学，你们怎么看待这件事呢？<br>相关信息：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/DBY8W9gimz3UTC-szJQPPw">前端根本不需要构建！“技术邪教” Ruby on Rails 之父再出激进言论引争议</a>、<a target="_blank" rel="noopener" href="https://www.51cto.com/article/769890.html">DHH 锐评 “打包工具”：前端根本不需要构建 (No Build)</a><br><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/11cd37a483994eb19bb2511526386793~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1301&h=551&s=141538&e=png&b=ffffff" alt="file"></p>
+</blockquote>
+<h4 id="better-commits"><a href="#better-commits" class="headerlink" title="better-commits"></a><a target="_blank" rel="noopener" href="https://github.com/Everduin94/better-commits">better-commits</a></h4><blockquote>
+<p>你是否还在为 commit 信息不准确而烦恼，那么 better-commit 将会是一个不错的选择。很多时候，我们为了快速提交，commit 信息会写的很粗略，这样在后续翻找历史代码时，无法直接从 commit 看出当时的改动是为了干什么，只能通过阅读代码来猜测当时的想法。好的 commit 不仅能够帮助自己记录改动说明，也能帮助他人更好的帮你 review 代码。<br><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/945bfd9b69b746fb9453bbbab2a67097~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=708&h=648&s=215522&e=gif&f=426&b=000000" alt="file"></p>
+</blockquote>
+<h4 id="10个免费的-AI-网站"><a href="#10个免费的-AI-网站" class="headerlink" title="10个免费的 AI 网站"></a><a target="_blank" rel="noopener" href="https://medium.com/@dkjhaj2ee/10-free-ai-websites-you-must-try-5e3589d72130">10个免费的 AI 网站</a></h4><ul>
+<li>AI 降噪：<a target="_blank" rel="noopener" href="https://podcast.adobe.com/enhance">https://podcast.adobe.com/enhance</a></li>
+<li>人声消除器：<a target="_blank" rel="noopener" href="https://vocalremover.org/">https://vocalremover.org/</a> 音乐伴奏自动生成</li>
+<li>室内设计： <a target="_blank" rel="noopener" href="https://www.roomgpt.io/">https://www.roomgpt.io/</a></li>
+<li>内容创作者：<a target="_blank" rel="noopener" href="https://rytr.me/">https://rytr.me/</a>Rytr 是一款人工智能写作助手，可帮助您在短短几秒钟内以极低的成本创建高质量的内容。</li>
+<li>脚本转换视频：<a target="_blank" rel="noopener" href="https://studio.d-id.com/">https://studio.d-id.com/</a></li>
+<li>文生图：<a target="_blank" rel="noopener" href="https://leonardo.ai/">https://leonardo.ai/</a></li>
+<li>创作无版权音乐：<a target="_blank" rel="noopener" href="https://soundful.com/">https://soundful.com/</a></li>
+<li>使用 Adob​​e Firefly 创建和编辑图像: <a target="_blank" rel="noopener" href="https://firefly.adobe.com/">https://firefly.adobe.com/</a></li>
+<li>使用 AI Meme Generator 将文本转换为 Meme:  <a target="_blank" rel="noopener" href="https://www.supermeme.ai/">https://www.supermeme.ai/</a></li>
+<li>Scribble Diffusion：使用 AI 将草图变成精致的图像： <a target="_blank" rel="noopener" href="https://scribblediffusion.com/">https://scribblediffusion.com/</a></li>
+</ul>
+<h3 id="更多推荐"><a href="#更多推荐" class="headerlink" title="更多推荐"></a>更多推荐</h3><h4 id="培养写作习惯的4种简单方法"><a href="#培养写作习惯的4种简单方法" class="headerlink" title="培养写作习惯的4种简单方法"></a><a target="_blank" rel="noopener" href="https://hackernoon.com/4-easy-ways-to-cultivate-a-writing-habit">培养写作习惯的4种简单方法</a></h4><blockquote>
+<ol>
+<li><strong>改变自己的心态</strong>：为了什么而写作，不去考虑结果，而是去感受这个过程。“*Don’t think in terms of the outcome but your identity and process.*”</li>
+<li><strong>有意识的暗示</strong>：当碰到有感触的事情，可以记录下来，潜意识的告诉自己，希望能够将对自己有感触的事情分享出去。</li>
+<li><strong>即时激励，用有吸引力的写作奖励来激励自己</strong>。写作过程中并没有多少多巴胺，但按下发帖按钮却涉及到了。完成一项具有挑战性的任务并取得进展的感觉也是令人欣慰的，你可以通过有意识地认识到这种感觉并记住你正在使你的身份变得更加强大，从而将这种感觉联系起来更强烈。</li>
+<li><strong>让写作尽可能顺畅</strong>：让写作融入你的生活。</li>
+</ol>
+</blockquote>
+<h4 id="2023-年终总结"><a href="#2023-年终总结" class="headerlink" title="2023 年终总结"></a><a target="_blank" rel="noopener" href="https://github.com/saveweb/review-2023">2023 年终总结</a></h4><blockquote>
+<p>你的年终总结写好了吗？不妨让我们来看看其他同学的年度总结吧！项目汇总了 221（持续更新中） 篇年终总结，大家可以挑选自己感兴趣的博主去看看他这一年的年终总结</p>
+</blockquote>
+<h4 id="Web3-游戏在2024的七个预测"><a href="#Web3-游戏在2024的七个预测" class="headerlink" title="Web3 游戏在2024的七个预测"></a><a target="_blank" rel="noopener" href="https://hackernoon.com/web3-gaming-7-predictions-for-2024">Web3 游戏在2024的七个预测</a></h4><blockquote>
+<p>本文深入探讨了 Web3 游戏行业的 7 个关键预测。Web3 游戏的未来取决于其提供引人注目且独特的游戏体验、超越市场趋势和投资者优先事项的能力。<br>早期的 NFT 确实存在很大的投机属性，文章预测不可替代代币（NFT）在游戏行业中的作用正在经历重大转变。 NFT 不再仅仅是投机资产，它正在被重新设想为商业模式中的基本要素。各位同学怎么看，欢迎大家踊跃讨论留言。</p>
+</blockquote>
+</div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A/">技术周刊</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2024/02/02/2024/0x20240202/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">前端早读精选 - 第六期</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2024/01/19/2024/0x20240119/"><span class="level-item">前端早读精选 - 第四期</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">Hexo</a><p class="is-size-7"><span>&copy; 2024 John Doe</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><!--!--><script src="/js/main.js" defer></script><!--!--></body></html>

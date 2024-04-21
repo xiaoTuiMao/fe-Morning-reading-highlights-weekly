@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>前端早读精选 - 第四期 - Hexo</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Hexo"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hexo"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来 Node、Git 常用的技巧，在技术发展趋势上，探讨 Rust、Go、Node、Deno、Bun 多种技术在实际业务中的使用选择。工具方面，强推荐大家尝试一下 AI 提效工具。话不多说，详细内容请大家查阅。如果觉得有收获，动动大拇指点个赞，以示鼓励！ 文章推荐NodeJS 的一些开发技巧与性能优化手段 文章通"><meta property="og:type" content="article"><meta property="og:title" content="前端早读精选 - 第四期"><meta property="og:url" content="http://example.com/2024/01/19/2024/0x20240119/"><meta property="og:site_name" content="Hexo"><meta property="og:description" content="探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来 Node、Git 常用的技巧，在技术发展趋势上，探讨 Rust、Go、Node、Deno、Bun 多种技术在实际业务中的使用选择。工具方面，强推荐大家尝试一下 AI 提效工具。话不多说，详细内容请大家查阅。如果觉得有收获，动动大拇指点个赞，以示鼓励！ 文章推荐NodeJS 的一些开发技巧与性能优化手段 文章通"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ffc5b5e34cda421bb920b73bf8da0c35~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&amp;h=768&amp;s=1191268&amp;e=png&amp;b=ebb382"><meta property="og:image" content="http://example.com/2024/01/19/2024/0x20240119/mdcat.png"><meta property="og:image" content="http://example.com/2024/01/19/2024/0x20240119/speak-english.png"><meta property="article:published_time" content="2024-01-19T00:00:00.000Z"><meta property="article:modified_time" content="2024-04-19T03:48:43.731Z"><meta property="article:author" content="John Doe"><meta property="article:tag" content="技术周刊"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ffc5b5e34cda421bb920b73bf8da0c35~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&amp;h=768&amp;s=1191268&amp;e=png&amp;b=ebb382"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/01/19/2024/0x20240119/"},"headline":"前端早读精选 - 第四期","image":["http://example.com/2024/01/19/2024/0x20240119/mdcat.png","http://example.com/2024/01/19/2024/0x20240119/speak-english.png"],"datePublished":"2024-01-19T00:00:00.000Z","dateModified":"2024-04-19T03:48:43.731Z","author":{"@type":"Person","name":"John Doe"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject"}},"description":"探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来 Node、Git 常用的技巧，在技术发展趋势上，探讨 Rust、Go、Node、Deno、Bun 多种技术在实际业务中的使用选择。工具方面，强推荐大家尝试一下 AI 提效工具。话不多说，详细内容请大家查阅。如果觉得有收获，动动大拇指点个赞，以示鼓励！ 文章推荐NodeJS 的一些开发技巧与性能优化手段 文章通"}</script><link rel="canonical" href="http://example.com/2024/01/19/2024/0x20240119/"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.2.0"></head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">Hexo</a></div><div class="navbar-menu"><div class="navbar-end"></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-01-19T00:00:00.000Z" title="2024/1/19 08:00:00">2024-01-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-04-19T03:48:43.731Z" title="2024/4/19 11:48:43">2024-04-19</time></span></div></div><h1 class="title is-3 is-size-4-mobile">前端早读精选 - 第四期</h1><div class="content"><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ffc5b5e34cda421bb920b73bf8da0c35~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1344&h=768&s=1191268&e=png&b=ebb382" alt="file"></p>
+<p>探索前端技术的无尽旅程从这里开始！每周精选前端领域的热门文章。文章方面，本期为大家带来 Node、Git 常用的技巧，在技术发展趋势上，探讨 Rust、Go、Node、Deno、Bun 多种技术在实际业务中的使用选择。工具方面，强推荐大家尝试一下 AI 提效工具。话不多说，详细内容请大家查阅。如果觉得有收获，动动大拇指点个赞，以示鼓励！</p>
+<h3 id="文章推荐"><a href="#文章推荐" class="headerlink" title="文章推荐"></a>文章推荐</h3><h4 id="NodeJS-的一些开发技巧与性能优化手段"><a href="#NodeJS-的一些开发技巧与性能优化手段" class="headerlink" title="NodeJS 的一些开发技巧与性能优化手段"></a><a target="_blank" rel="noopener" href="https://medium.com/@Choco23/node-js-mastery-advanced-development-performance-tips-da07355c1e8a">NodeJS 的一些开发技巧与性能优化手段</a></h4><blockquote>
+<p>文章通过 Express 简单启动一个服务作为切入点，列举了常用的压力测试（<a target="_blank" rel="noopener" href="https://httpd.apache.org/docs/2.4/programs/ab.html">ab</a>、<a target="_blank" rel="noopener" href="http://home.tiscali.cz/~cz210552/webbench.html">webbench</a>、<a target="_blank" rel="noopener" href="https://github.com/mcollina/autocannon">autocannon</a>）、性能测试工具、debug工具（chrome devTool）。性能优化方面与内存管理，列举了一些常用的优化手段与内存管理方式。阅读大约 <strong>6 分钟</strong>，大家可以按需查漏补缺。</p>
+</blockquote>
+<h4 id="十个你应该知道的-Git-命令"><a href="#十个你应该知道的-Git-命令" class="headerlink" title="十个你应该知道的 Git 命令"></a><a target="_blank" rel="noopener" href="https://levelup.gitconnected.com/10-must-know-git-commands-for-software-engineers-ffc6687d6dfd">十个你应该知道的 Git 命令</a></h4><blockquote>
+<p>Git是每个软件工程师必须知道的最基本的东西。这些工具是开发人员日常工作不可或缺的一部分，因为我们每天都与他们互动。精通Git不仅可以简化您的生活，还可以显著提高工作效率。在这篇博文中，我们将探索一组可以提高你的工作效率的命令。随着您越来越熟练地使用这些命令，您将节省宝贵的时间，并成为一名更高效的软件工程师。其中 <code>git commit --amend -m &#39;msg&#39;</code> 很适合笔者这种直接用上一次命令快速commit的提交后，但是又想要改一下commit 信息，使其更符合这次提交的信息，又不想再修改文件的情况下使用，可以直接将最后一次的 <code>commit</code> 信息进行修改。也比较适合一个需求最后阶段做个总结的 commit 信息补充。</p>
+</blockquote>
+<h4 id="REST-API-设计最佳实践"><a href="#REST-API-设计最佳实践" class="headerlink" title="REST API 设计最佳实践"></a><a target="_blank" rel="noopener" href="https://medium.com/@techworldwithmilan/rest-api-design-best-practices-2eb5e749d428">REST API 设计最佳实践</a></h4><blockquote>
+<p>想了解 REST API 设计的原则，可以看一下这篇文章。阅读大约 4 分钟，文章阐述了 10 条设计 REST API 的最佳实践。</p>
+</blockquote>
+<h4 id="7-种”防御型编程“方式"><a href="#7-种”防御型编程“方式" class="headerlink" title="7 种”防御型编程“方式"></a><a target="_blank" rel="noopener" href="https://medium.com/@Evelyn.Taylor/7-bad-ways-to-write-javascript-f41186f6dd05">7 种”防御型编程“方式</a></h4><blockquote>
+<p>当我拿出“防御型编程代码”，请问阁下将如何应对。文章列举了 7 种在日程编写代码种容易出现的编码陋习，并给到了更优的写法。快来看看自己的代码是否是这 7 种防御型代码。</p>
+</blockquote>
+<h4 id="2023-年最大技术分歧：选-Rust-还是-Go-？"><a href="#2023-年最大技术分歧：选-Rust-还是-Go-？" class="headerlink" title="2023 年最大技术分歧：选 Rust 还是 Go ？"></a><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/QP69q7LYZMF7tvcrvj31gg">2023 年最大技术分歧：选 Rust 还是 Go ？</a></h4><blockquote>
+<p>在 Stack Overflow 2022 开发者调查中，对于“让人爱恨交织的编程语言”这个问题，在 7 万份回复中，程序员们明显也更为偏爱 Rust，86% 的人表示喜欢 Rust，而 64% 的人表示喜欢 Go。面对 Rust 的火爆现状，一些开发者发出了灵魂提问：2023 年，Go 还值得学习吗？</p>
+</blockquote>
+<blockquote>
+<p>笔者选 <strong>rust</strong>！哈哈哈哈哈哈哈！</p>
+</blockquote>
+<h4 id="2024-年你应该使用-Bun、NodeJS-还是-Deno？"><a href="#2024-年你应该使用-Bun、NodeJS-还是-Deno？" class="headerlink" title="2024 年你应该使用 Bun、NodeJS 还是 Deno？"></a><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/ygHeG3HDGdeBiuYF6v1Pdg">2024 年你应该使用 Bun、NodeJS 还是 Deno？</a></h4><blockquote>
+<p>对于你下一个重要的 JavaScript 项目，应该选择什么呢？嗯，事情并不那么简单。理解每个运行环境的优势和劣势是很重要的。因此，本文通过比较 Bun、NodeJS 和 Deno，深入探讨它们的优点、缺陷等方面。</p>
+</blockquote>
+<p>简单总结一下三者优缺点</p>
+<table>
+<thead>
+<tr>
+<th>优缺点</th>
+<th>NodeJS</th>
+<th><a target="_blank" rel="noopener" href="https://github.com/denoland/deno">Deno</a></th>
+<th><a target="_blank" rel="noopener" href="https://github.com/oven-sh/bun">Bun</a></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>优点</td>
+<td>1. 非阻塞 I&#x2F;O 和可伸缩性提供了更高的性能 2. 成熟的生态系统，拥有众多的库和框架 3.庞大而活跃的社区支持</td>
+<td>1. 安全性高 2. 天然支持 TS，开发体验更优 3. 通过 URL 简化模块管理</td>
+<td>1. 学习曲线低，Bun 是一个全能的工具包 2. 使用JavaScriptCore 引擎，性能更高</td>
+</tr>
+<tr>
+<td>缺点</td>
+<td>1.单现成特性存在性能瓶颈，不适合CPU密集型任务 2. 容易陷入异步编程回调地狱</td>
+<td>1. 生态不成熟 2. 三方库可用性有限</td>
+<td>1. 社区支持有限，属于新推出产品</td>
+</tr>
+</tbody></table>
+<p>那么实际项目中，怎么选择技术方案？</p>
+<ul>
+<li><strong>Node.js</strong>：如果你更喜欢经过多年试验和测试的稳定可靠生态系统，那么这是首选的运行环境。</li>
+<li><strong>Deno</strong>：如果你优先考虑安全性和最新的编程环境特性，则建议使用 Deno。它还原生支持 TypeScript。</li>
+<li><strong>Bun</strong>：如果你需要高速度，特别是在使用 JavaScript 或 TypeScript 时，那么这个运行环境应该是你的首选。</li>
+</ul>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/oven-sh/bun">Bun</a> 作为一个新的轮子，并且荣获2023 最受欢迎第二名，可见社区对其的期待，想了解更新关于 <a target="_blank" rel="noopener" href="https://github.com/oven-sh/bun">Bun</a> 的信息，可查看<a target="_blank" rel="noopener" href="https://juejin.cn/post/7277387014046335010">相关文档</a></p>
+</blockquote>
+<h3 id="工具推荐"><a href="#工具推荐" class="headerlink" title="工具推荐"></a>工具推荐</h3><h4 id="h5player"><a href="#h5player" class="headerlink" title="h5player"></a><a target="_blank" rel="noopener" href="https://github.com/xxxily/h5player">h5player</a></h4><blockquote>
+<p>一个油猴视频增强脚本，支持所有H5视频网站，例如：B站、抖音、腾讯视频、优酷、爱奇艺、西瓜视频、油管（YouTube）、微博视频、知乎视频、搜狐视频、网易公开课、百度网盘、阿里云盘、ted、instagram、twitter等。全程快捷键控制，支持：倍速播放&#x2F;加速播放、视频画面截图、画中画、网页全屏、调节亮度、饱和度、对比度、自定义配置功能增强等功能，为你提供愉悦的在线视频播放体验。还有视频广告快进、在线教程&#x2F;教育视频倍速快学、视频文件下载等能力</p>
+</blockquote>
+<h4 id="oxlint更快的-Lint-工具"><a href="#oxlint更快的-Lint-工具" class="headerlink" title="oxlint更快的 Lint 工具"></a><a target="_blank" rel="noopener" href="https://oxc-project.github.io/blog/2023-12-12-announcing-oxlint.html">oxlint</a>更快的 Lint 工具</h4><blockquote>
+<p>比 eslint 快 50- 100 倍的 lint 工具正式发布。在真实测试场景下，Shopify 报告称，他们需要 75 分钟的 eslint 检测，在使用 oxlint 后，仅仅只发给 10 秒。简单易用，可以在没有配置文件的场景下，在项目根路径下运行 <code>npx oxlint@latest</code> 即可。但 oxlint 尚未提供插件系统，所以暂时不支持 <code>TypeScript、React、Jest、Unicorn、JSX-a11y</code> 和 <code>Import</code> 等流行插件的规则。</p>
+</blockquote>
+<blockquote>
+<p>笔者建议：如果当前项目 Lint 耗时并不是效率瓶颈，可以先保持观望一波！</p>
+</blockquote>
+<h4 id="mdcat"><a href="#mdcat" class="headerlink" title="mdcat"></a><a target="_blank" rel="noopener" href="https://github.com/swsnr/mdcat">mdcat</a></h4><blockquote>
+<p>一个可以在命令行显示 Markdown 文件渲染后的内容工具。体验了一下，能够识别部分语法，但是想表格、勾选框这一类的没有识别<br><img src="./mdcat.png"/></p>
+</blockquote>
+<h4 id="DOMPurify-专注于Dom-的-XSS-清除程序"><a href="#DOMPurify-专注于Dom-的-XSS-清除程序" class="headerlink" title="DOMPurify 专注于Dom 的 XSS 清除程序"></a><a target="_blank" rel="noopener" href="https://github.com/cure53/DOMPurify">DOMPurify</a> 专注于Dom 的 XSS 清除程序</h4><blockquote>
+<p>DOMPurify 专注于消除 HTML、SVG 和 MathML 中的潜在恶意代码，通过在将用户提供的内容插入到 DOM 之前，清理和净化这些内容来防范 XSS 攻击。相较于 <a target="_blank" rel="noopener" href="https://github.com/leizongmin/js-xss">XSS</a>在过滤 Dom 的场景下，<a target="_blank" rel="noopener" href="https://github.com/cure53/DOMPurify">DOMPurify</a> 要更快，但在处理一些特定场景（如处理纯字符串）时不如一些通用的  <a target="_blank" rel="noopener" href="https://github.com/leizongmin/js-xss">XSS</a> 过滤库灵活。简单来说，如果你主要关注在前端处理用户输入并防范 XSS，<a target="_blank" rel="noopener" href="https://github.com/cure53/DOMPurify">DOMPurify</a> 是一个强大的选择，尤其是在处理 DOM 内容方面。如果你需要通用的  <a target="_blank" rel="noopener" href="https://github.com/leizongmin/js-xss">XSS</a> 过滤功能，或者对性能要求不是特别严格，”xss” 包可能是一个更通用的选择。</p>
+</blockquote>
+<h4 id="everyone-can-use-english"><a href="#everyone-can-use-english" class="headerlink" title="everyone-can-use-english"></a><a target="_blank" rel="noopener" href="https://github.com/xiaolai/everyone-can-use-english">everyone-can-use-english</a></h4><blockquote>
+<p>一款使用 electron 创建的学习英语的软件。支持添加视频音频学习资料。同时还支持机器人对话翻译，单词本，打卡记录等多种功能。注意一点：启动项目后需要使用 <a target="_blank" rel="noopener" href="https://messenger.mixin.one/zh/download?platform=iOS">Mixin-Messenger</a> 进行登录，但是 <a target="_blank" rel="noopener" href="https://messenger.mixin.one/zh/download?platform=iOS">Mixin-Messenger</a>不支持国区，iOS 用户可以切换 AppStore 地区进行下载，笔者切换至土耳其下载成功，安卓用户可以使用 google-play 下载安装。</p>
+</blockquote>
+<h4 id="通过AI工具提升开发效率"><a href="#通过AI工具提升开发效率" class="headerlink" title="通过AI工具提升开发效率"></a><a target="_blank" rel="noopener" href="https://hackernoon.com/ai-powered-tools-that-doubled-my-development-speed">通过AI工具提升开发效率</a></h4><blockquote>
+<p>文章推荐了几款在日程开发过程中，能够提升我们开发效率的AI工具，如<a target="_blank" rel="noopener" href="https://github.com/features/copilot?ref=hackernoon.com">Copilot</a>、<a target="_blank" rel="noopener" href="https://github.com/gpt-engineer-org/gpt-engineer?ref=hackernoon.com">GPT-Engineer</a>、<a target="_blank" rel="noopener" href="https://github.com/sourcegraph/cody?ref=hackernoon.com">Cody AI</a>、<a target="_blank" rel="noopener" href="https://github.com/eylonmiz/react-agent?ref=hackernoon.com">React Agent</a>、<a target="_blank" rel="noopener" href="https://v0.dev/?ref=hackernoon.com">v0</a>、<a target="_blank" rel="noopener" href="https://github.com/sweepai/sweep?ref=hackernoon.com">Sweep AI</a>、<a target="_blank" rel="noopener" href="https://github.com/ukanwat/scriptgpt/?ref=hackernoon.com">ScriptGPT</a><br><strong>GPT 工程师即将崛起！🤣🤣🤣</strong></p>
+</blockquote>
+<h4 id="everyone-can-use-english-1"><a href="#everyone-can-use-english-1" class="headerlink" title="everyone-can-use-english"></a><a target="_blank" rel="noopener" href="https://github.com/xiaolai/everyone-can-use-english">everyone-can-use-english</a></h4><blockquote>
+<p>一款使用 electron 创建的学习英语的软件。支持添加视频音频学习资料。同时还支持机器人对话翻译，单词本，打卡记录等多种功能。注意一点：启动项目后需要使用 <a target="_blank" rel="noopener" href="https://messenger.mixin.one/zh/download?platform=iOS">Mixin-Messenger</a> 进行登录，但是 <a target="_blank" rel="noopener" href="https://messenger.mixin.one/zh/download?platform=iOS">Mixin-Messenger</a>不支持国区，iOS 用户可以切换 AppStore 地区进行下载，笔者切换至土耳其下载成功，安卓用户可以使用 google-play 下载安装。<br><img src="./speak-english.png" /></p>
+</blockquote>
+<h4 id="通过AI工具提升开发效率-1"><a href="#通过AI工具提升开发效率-1" class="headerlink" title="通过AI工具提升开发效率"></a><a target="_blank" rel="noopener" href="https://hackernoon.com/ai-powered-tools-that-doubled-my-development-speed">通过AI工具提升开发效率</a></h4><blockquote>
+<p>文章推荐了几款在日程开发过程中，能够提升我们开发效率的AI工具，如<a target="_blank" rel="noopener" href="https://github.com/features/copilot?ref=hackernoon.com">Copilot</a>、<a target="_blank" rel="noopener" href="https://github.com/gpt-engineer-org/gpt-engineer?ref=hackernoon.com">GPT-Engineer</a>、<a target="_blank" rel="noopener" href="https://github.com/sourcegraph/cody?ref=hackernoon.com">Cody AI</a>、<a target="_blank" rel="noopener" href="https://github.com/eylonmiz/react-agent?ref=hackernoon.com">React Agent</a>、<a target="_blank" rel="noopener" href="https://v0.dev/?ref=hackernoon.com">v0</a>、<a target="_blank" rel="noopener" href="https://github.com/sweepai/sweep?ref=hackernoon.com">Sweep AI</a>、<a target="_blank" rel="noopener" href="https://github.com/ukanwat/scriptgpt/?ref=hackernoon.com">ScriptGPT</a><br><strong>GPT 工程师即将崛起！🤣🤣🤣</strong></p>
+</blockquote>
+</div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A/">技术周刊</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2024/01/26/2024/0x20240126/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">前端早读精选 - 第五期</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2024/01/12/2024/0x20240112/"><span class="level-item">前端早读精选 - 第三期</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">Hexo</a><p class="is-size-7"><span>&copy; 2024 John Doe</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><!--!--><script src="/js/main.js" defer></script><!--!--></body></html>
